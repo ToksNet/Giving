@@ -1,10 +1,8 @@
 import React from "react";
+import { PiUserCircleFill } from "react-icons/pi";
+import { FaCartShopping } from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleUser,
-  faCartShopping,
-  faQuestionCircle,
-} from "@fortawesome/free-solid-svg-icons";
+import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 import { FaSearch, FaAngleDown } from "react-icons/fa";
 
 const NavBar = () => {
@@ -45,7 +43,7 @@ const NavBar = () => {
         <div className="flex items-center space-x-4 pr-9">
           {/* Profile */}
           <div className="flex items-center space-x-2">
-            <FontAwesomeIcon icon={faCircleUser} className="w-8 h-8" />
+            <PiUserCircleFill className="w-8 h-8" />
             <span className="opacity-50">Account name</span>
           </div>
           <FaAngleDown className="w-4 h-4" />
@@ -59,7 +57,7 @@ const NavBar = () => {
 
           {/* Cart */}
           <div className="flex items-center space-x-2">
-            <FontAwesomeIcon icon={faCartShopping} className="w-8 h-8" />
+            <FaCartShopping className="w-8 h-8" />
             <span className="opacity-50">Cart</span>
             <FaAngleDown className="w-4 h-4" />
           </div>

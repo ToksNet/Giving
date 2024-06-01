@@ -1,8 +1,8 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { RiFacebookLine, RiTwitterLine, RiLinkedinLine } from "react-icons/ri";
+import { FaInstagram } from "react-icons/fa";
 import { CiPaperplane } from "react-icons/ci";
 import { AiFillApple } from "react-icons/ai";
-import { FcGoogle } from "react-icons/fc";
 
 const Footer = () => {
   return (
@@ -101,14 +101,14 @@ const Footer = () => {
           </h3>
           <p className="mb-3 text-xs">Save 3$ with App New User Only</p>
           <div className="flex items-center mb-5 space-x-2 mt-2">
-            <img src="/QR.jpg" alt="QR Code" className="w-16 h-16" />
+            <img src="./images/QR.jpg" alt="QR Code" className="w-16 h-16" />
             <div>
               <div
                 className="flex mb-3 items-center space-x-0 border p-1 rounded-md bg-black border-white text-white"
                 style={{ height: "36px", width: "40" }}
               >
                 <img
-                  src="/playstore.png"
+                  src="./images/playstore.png"
                   alt="Google Play Store"
                   className="w-5 h-5"
                 />
@@ -159,10 +159,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex space-x-3 mt-4">
-            <FaFacebook className="w-6 h-6 cursor-pointer" />
-            <FaTwitter className="w-6 h-6 cursor-pointer" />
+            <RiFacebookLine className="w-6 h-6 cursor-pointer" />
+            <RiTwitterLine className="w-6 h-6 cursor-pointer" />
             <FaInstagram className="w-6 h-6 cursor-pointer" />
-            <FaLinkedin className="w-6 h-6 cursor-pointer" />
+            <RiLinkedinLine className="w-6 h-6 cursor-pointer" />
           </div>
         </div>
       </div>

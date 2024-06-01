@@ -2,7 +2,7 @@ import React from "react";
 
 const AdvertCard = ({ image1, image2, image3, image4 }) => {
   return (
-    <div className="w-[1025px] mx-32 mt-4 bg-white p-8">
+    <div className="w-[1025px] justify-center  mt-4 bg-white p-8">
       <div className="flex items-center gap-3">
         <div className="h-3 bg-red-500 p-4 px-2 rounded-sm"></div>
         <p className="text-sm text-red-500">Featured</p>
@@ -12,8 +12,8 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
         <p className="text-2xl font-medium">Deals</p>
       </div>
 
-      <div className="flex justify-between mt-5">
-        <div className="relative w-[510px] bg-black rounded-md flex items-end justify-center mr-4">
+      <div className="w-[1025px] flex justify-between mt-5">
+        <div className="relative w-[590px] bg-black rounded-md flex items-end justify-center mr-4">
           <img src={image1} alt="Advert 1" className="w-[511px] mb-4" />
           <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-md w-[242px] space-y-2">
             <p className="text-2xl">PlayStation 5</p>
