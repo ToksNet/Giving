@@ -6,7 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-black mt-48 text-white py-10">
       <div className="container mx-auto flex flex-wrap justify-between px-3 md:px-5">
         {/* 1st Column */}
         <div className="flex-1 min-w-[150px] mb-5 md:mb-0">

@@ -8,14 +8,14 @@ const SaleBanner = () => {
   };
 
   return (
-    <div className="fixed top-0 w-full h-12 bg-black text-white flex justify-between items-center px-4 z-50">
-      <div className="flex-1 text-center">
-        <span>
+    <div className="fixed top-0 w-full h-12 bg-black text-white flex justify-between items-center px-4 py-4 pt-3 z-50">
+      <div className="flex-1 flex-col text-center">
+        <span className="text-xs">
           Summer Sales For All Swim Suits And Free Express Delivery - Off 50%!{" "}
         </span>
         <span className="font-bold underline">ShopNow</span>
       </div>
-      <div className="relative pr-9">
+      <div className="relative md:pr-9">
         <button
           onClick={toggleDropdown}
           className="flex items-center focus:outline-none"
@@ -30,7 +30,7 @@ const SaleBanner = () => {
           </svg>
         </button>
         {dropdownOpen && (
-          <div className="absolute right-0 mt-2 w-32 bg-white text-black rounded-md shadow-lg">
+          <div className="absolute right-0 mt-2 w-32  bg-white text-black rounded-md shadow-lg">
             <ul>
               <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
                 English
