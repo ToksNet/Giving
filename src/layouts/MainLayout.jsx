@@ -4,7 +4,6 @@ import NavBar from "../components/NavBar";
 import SaleBanner from "../components/SaleBanner";
 import Hero from "../components/Hero";
 import { Outlet } from "react-router-dom";
-import ExploreProduct from "../components/ExploreProduct";
 
 const MainLayout = () => {
   return (
@@ -15,7 +14,6 @@ const MainLayout = () => {
         <NavBar />
         <Hero />
 
-        <ExploreProduct />
         <Outlet />
         <Footer />
       </div>
