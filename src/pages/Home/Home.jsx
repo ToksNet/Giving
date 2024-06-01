@@ -5,8 +5,7 @@ import TodayProduct from './TodayProduct'
 
 const Home = () => {
   return (
-    <div  className=" container mx-auto px-3 md:px-5">
-    <Header />
+    <div  className=" container mx-auto px-3 md:px-10">
     <Categories />
     <TodayProduct />
       

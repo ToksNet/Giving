@@ -46,5 +46,10 @@ export const categoryImages= [
         starsNo:5,
         discountRate:40,
         new:false,
+        availColors: [
+          { id: 1, name: "Red", code: "#FF0000" },
+          { id: 2, name: "Blue", code: "#0000FF" },
+          { id: 3, name: "Green", code: "#00FF00" },
+        ],
       },
   ]
