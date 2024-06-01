@@ -15,9 +15,9 @@ const MainLayout = () => {
         <SaleBanner />
         <NavBar />
         <Hero />
-
-        <ExploreProduct />
         <Outlet />
+        <ExploreProduct />
+        
         <Footer />
       </div>
     </>
