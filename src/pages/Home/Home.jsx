@@ -1,6 +1,7 @@
-import React from 'react'
-import Header from './Header'
-import Categories from './Categories'
+import React from "react";
+import Header from "./Header";
+import Categories from "./Categories";
+import CustomerService from "./CustomerService";
 import TodayProduct from './TodayProduct'
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
     <TodayProduct />
       
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

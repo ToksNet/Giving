@@ -1,9 +1,10 @@
 import React from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import SaleBanner from "../components/SaleBanner"
+import SaleBanner from "../components/SaleBanner";
 import Hero from "../components/Hero";
-import Categories from "../components/Categories";
+import { Outlet } from "react-router-dom";
+import ExploreProduct from "../components/ExploreProduct";
 import Home from '../pages/Home/Home'
 
 const MainLayout = () => {
@@ -14,8 +15,9 @@ const MainLayout = () => {
         <SaleBanner />
         <NavBar />
         <Hero />
-        <Categories />
-         <Home></Home>
+
+        <ExploreProduct />
+        <Outlet />
         <Footer />
       </div>
     </>
