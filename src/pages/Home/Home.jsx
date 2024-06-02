@@ -4,14 +4,14 @@ import Categories from "./Categories";
 import CustomerService from "./CustomerService";
 import Advert from "./Advert";
 import BeautySales from "../../components/BeautySales";
-import ExploreProduct from "../components/ExploreProduct";
+// import ExploreProduct from "../components/ExploreProduct";
 
 const Home = () => {
   return (
     <div>
       <Header />
       <Categories />
-      <ExploreProduct />
+      {/* <ExploreProduct /> */}
       <BeautySales />
       <Advert />
       <CustomerService />

@@ -13,7 +13,7 @@ import { IoEyeOutline } from "react-icons/io5";
 const ExploreProduct = () => {
   return (
     <>
-        <div className='mx-32 mt-4'>
+        <div className='mx-32 mb-20 mr-12 mt-4'>
             <div>
                 <div className='mb-9'>
                     <div className='flex items-center gap-3'>
@@ -23,7 +23,7 @@ const ExploreProduct = () => {
 
                     <div className='flex items-center mt-5 justify-between'>
                         <p className='text-2xl font-medium'>Explore Our Products</p>
-                        <div className='flex text-sm mr-12 gap-2 items-center'>
+                        <div className='flex text-sm mr-16 gap-2 items-center'>
                         <FaArrowLeft className='p-2 w-8 h-8 bg-gray-200 rounded-full'/>
                         <FaArrowRight className='p-2 w-8 h-8 bg-gray-200 rounded-full'/>
                         </div>
@@ -35,15 +35,16 @@ const ExploreProduct = () => {
                             <div className='flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-7 bg-gray-200'>
                                 <img src="../images/Explore-1.jpg" className='pl-7 mt-5 w-28' alt="Explore Image 1" />
                                 <div className='flex flex-col gap-2 items-center'>
-                                 <IoMdHeartEmpty  className='p-1 w-7 h-7 bg-white rounded-full'/>
-                                 <IoEyeOutline  className='p-1 w-7 h-7 bg-white rounded-full'/>
+                                    <a href="#"><IoMdHeartEmpty  className='p-1 w-7 h-7 bg-white rounded-full'/></a>
+                                 <a href="#"><IoEyeOutline  className='p-1 w-7 h-7 bg-white rounded-full'/></a>
+                                 
                                 </div>
                             </div>
                             <div className='mt-4'>
                                 <div>
                                   <p className='text-sm font-medium'>Breed Dry Dog Food</p>
                                   <div className='flex gap-2 mt-1'>
-                                    <p className='text-sm text-orange-600'>$100</p>
+                                    <p className='text-sm font-medium text-orange-700'>$100</p>
 
                                     <div className='flex'>
                                     <IoMdStar  className='text-orange-400 w-5 h-5'/>
@@ -73,7 +74,7 @@ const ExploreProduct = () => {
                                 <div>
                                   <p className='text-sm font-medium'>CANON EOS DSLR Camera</p>
                                   <div className='flex gap-2 mt-1'>
-                                    <p className='text-sm text-orange-600'>$360</p>
+                                    <p className='text-sm font-medium text-orange-700'>$360</p>
 
                                     <div className='flex'>
                                     <IoMdStar  className='text-orange-400 w-5 h-5'/>
@@ -100,7 +101,7 @@ const ExploreProduct = () => {
                                 <div>
                                   <p className='text-sm font-medium'>ASUS FHD Gaming Laptop</p>
                                   <div className='flex gap-2 mt-1'>
-                                    <p className='text-sm text-orange-600'>$700</p>
+                                    <p className='text-sm font-medium text-orange-700'>$700</p>
 
                                     <div className='flex'>
                                     <IoMdStar  className='text-orange-400 w-5 h-5'/>
@@ -127,7 +128,7 @@ const ExploreProduct = () => {
                                 <div>
                                   <p className='text-sm font-medium'>Curology Product Set</p>
                                   <div className='flex gap-2 mt-1'>
-                                    <p className='text-sm text-orange-600'>$500</p>
+                                    <p className='text-sm font-medium text-orange-700'>$500</p>
 
                                     <div className='flex'>
                                     <IoMdStar  className='text-orange-400 w-5 h-5'/>
@@ -146,7 +147,7 @@ const ExploreProduct = () => {
                             <div className='flex items-start w-52 py-2 pb-6 pr-1  gap-2 bg-gray-200'>
                                 <p className='text-white bg-green-400 text-xs ml-1 px-1'>NEW</p>
                                 <div className='flex gap-3'>
-                                <img src="../images/Explore-5.png" className='mt-5 w-28 h-32' alt="Explore Image 1" />
+                                <img src="../images/Explore-5.png" className='mt-10 mb-8 w-28' alt="Explore Image 1" />
                                 <div className='flex flex-col gap-2 items-center'>
                                  <IoMdHeartEmpty  className='p-1 w-7 h-7 bg-white rounded-full'/>
                                  <IoEyeOutline  className='p-1 w-7 h-7 bg-white rounded-full'/>
@@ -157,7 +158,7 @@ const ExploreProduct = () => {
                                 <div>
                                   <p className='text-sm font-medium'>Kid's Electric Car</p>
                                   <div className='flex gap-2 mt-1'>
-                                    <p className='text-sm text-orange-600'>$980</p>
+                                    <p className='text-sm font-medium text-orange-700'>$980</p>
 
                                     <div className='flex'>
                                     <IoMdStar  className='text-orange-400 w-5 h-5'/>
@@ -178,7 +179,7 @@ const ExploreProduct = () => {
 
                         <div className=''>
                             <div className='flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200'>
-                                <img src="../images/Explore-6.png" className='pl- mt-5 h-32 w-32' alt="Explore Image 1" />
+                                <img src="../images/Explore-6.png" className='pl- mt-5 mb-4 w-32' alt="Explore Image 1" />
                                 <div className='flex flex-col gap-2 items-center'>
                                  <IoMdHeartEmpty  className='p-1 w-7 h-7 bg-white rounded-full'/>
                                  <IoEyeOutline  className='p-1 w-7 h-7 bg-white rounded-full'/>
@@ -188,7 +189,7 @@ const ExploreProduct = () => {
                                 <div>
                                   <p className='text-sm font-medium'>Jr.Zoom Soccer Cleats</p>
                                   <div className='flex gap-2 mt-1'>
-                                    <p className='text-sm text-orange-600'>$1160</p>
+                                    <p className='text-sm font-medium text-orange-700'>$1160</p>
 
                                     <div className='flex'>
                                     <IoMdStar  className='text-orange-400 w-5 h-5'/>
@@ -213,7 +214,7 @@ const ExploreProduct = () => {
                         <div className='flex items-start w-52 py-2 pb-6 pr-1  gap-2 bg-gray-200'>
                                 <p className='text-white bg-green-400 text-xs ml-1 px-1'>NEW</p>
                                 <div className='flex gap-3'>
-                                <img src="../images/Explore-7.png" className='mt-5 w-28 h-32' alt="Explore Image 1" />
+                                <img src="../images/Explore-7.png" className='mt-8 mb-5 w-28' alt="Explore Image 1" />
                                 <div className='flex flex-col gap-2 items-center'>
                                  <IoMdHeartEmpty  className='p-1 w-7 h-7 bg-white rounded-full'/>
                                  <IoEyeOutline  className='p-1 w-7 h-7 bg-white rounded-full'/>
@@ -224,7 +225,7 @@ const ExploreProduct = () => {
                                 <div>
                                   <p className='text-sm font-medium'>GP11 Shooter USP Gamepad</p>
                                   <div className='flex gap-2 mt-1'>
-                                    <p className='text-sm text-orange-600'>$660</p>
+                                    <p className='text-sm font-medium text-orange-700'>$660</p>
 
                                     <div className='flex'>
                                     <IoMdStar  className='text-orange-400 w-5 h-5'/>
@@ -258,7 +259,7 @@ const ExploreProduct = () => {
                                 <div>
                                   <p className='text-sm font-medium'>Quilted satin Jacket</p>
                                   <div className='flex gap-2 mt-1'>
-                                    <p className='text-sm text-orange-600'>$660</p>
+                                    <p className='text-sm font-medium text-orange-700'>$660</p>
 
                                     <div className='flex'>
                                     <IoMdStar  className='text-orange-400 w-5 h-5'/>
@@ -279,6 +280,10 @@ const ExploreProduct = () => {
                                 </div>
                             </div>
                         </div>
+                </div>
+
+                <div className='text-center mt-16'>
+                    <a href="#" className='text-xs font-medium bg-red-500 text-white rounded px-5 py-2 '>View All Prodects</a>
                 </div>
             </div>
         </div>
