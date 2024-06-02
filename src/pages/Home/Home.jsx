@@ -5,15 +5,26 @@ import CustomerService from "./CustomerService";
 import Advert from "./Advert";
 import NewAdvert from "./NewAdvert";
 import BeautySales from "../../components/BeautySales";
-import ExploreProduct from "../components/ExploreProduct";
+import ExploreProduct from "../../components/ExploreProduct";
+import ExploreProduct1 from "../../components/ExploreProduct1";
+import NewArrival from "../../components/NewArrival";
+import BlackFriday from "../../components/BlackFriday";
+import TimerBanner from "../../components/TimerBanner";
 
 const Home = () => {
   return (
     <div>
       <Header />
       <Categories />
-      <ExploreProduct />
+      <TimerBanner />
+      <NewAdvert />
+      <BlackFriday />
+      <ExploreProduct1 />
+      <NewAdvert />
+      <NewArrival />
       <BeautySales />
+
+      <ExploreProduct />
       <Advert />
       <CustomerService />
     </div>
