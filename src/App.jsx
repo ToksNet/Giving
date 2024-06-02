@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Home from "./pages/Home/Home";
+import Signin from "./pages/auth/Signin";
 import {
   Route,
   createBrowserRouter,
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       {/* <Route path="Route" element={<Route name />} /> */}
     </Route>
+    // <Route path="Signin" element={<Signin />} />
   )
 );
 const App = () => {

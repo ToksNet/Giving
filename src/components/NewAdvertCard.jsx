@@ -1,6 +1,6 @@
 import React from "react";
 
-const AdvertCard = ({ image1, image2, image3, image4 }) => {
+const NewAdvertCard = ({ image1, image2, image3, image4 }) => {
   return (
     <div className="w-[1025px] justify-center  mt-4 bg-white p-8">
       <div className="flex items-center gap-3">
@@ -9,7 +9,7 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
       </div>
 
       <div className="flex items-center mt-5 justify-between">
-        <p className="text-2xl font-medium">Deals</p>
+        <p className="text-2xl font-medium">New Arrival</p>
       </div>
 
       <div className="w-[1025px] flex justify-between mt-5">
@@ -90,4 +90,4 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
   );
 };
 
-export default AdvertCard;
+export default NewAdvertCard;
