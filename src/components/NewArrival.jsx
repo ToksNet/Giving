@@ -12,7 +12,7 @@ import { IoEyeOutline } from "react-icons/io5";
 const NewArrival = () => {
   return (
     <>
-        <div className='mx-28 mr-12 mt-4'>
+        <div className='mx-32 mb-20 mr-12 mt-20'>
             <div>
                 <div className='mb-9'>
                     <div className='flex items-center gap-3'>
@@ -836,9 +836,9 @@ const NewArrival = () => {
                         
                     </div>
 
-                    <div className='mt-10 text-center'>
+                    {/* <div className='mt-10 text-center'>
                         <a href="#" className='text-xs font-medium bg-red-500 text-white rounded px-5 py-2'>View All Products</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
