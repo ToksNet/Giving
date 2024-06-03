@@ -33,17 +33,21 @@ const ExploreProduct1 = () => {
           </div>
           <div className="grid grid-cols-4">
             {/* 1st row */}
-            <div className="mb-6">
-              <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+            <div className="mb-6 group relative">
+              <div className="flex items-start w-52 py-2 pb-6 pr-1 pl-7 gap-3 bg-gray-200">
                 <img
                   src="../images/Explore-10.png"
-                  className=" mt-4 w-32"
+                  className="mt-4 w-32"
                   alt="Explore Image 1"
                 />
+
                 <div className="flex flex-col gap-2 items-center">
                   <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
                   <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
                 </div>
+              </div>
+              <div className="bg-black text-white absolute w-full text-center p-2 bottom-20 opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
+                Add to Cart
               </div>
               <div className="mt-4">
                 <div>
@@ -53,7 +57,6 @@ const ExploreProduct1 = () => {
                       <p className="text-sm text-orange-600 ">$260</p>
                       <p className="text-sm text-gray-600 line-through">$360</p>
                     </div>
-
                     <div className="flex">
                       <div className="flex">
                         <IoMdStar className="text-orange-400 w-5 h-5" />
@@ -68,7 +71,8 @@ const ExploreProduct1 = () => {
                 </div>
               </div>
             </div>
-            <div className="mb-6">
+
+            <div className="mb-6 group relative">
               <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
                 <img
                   src="../images/Explore11.png"
@@ -79,6 +83,9 @@ const ExploreProduct1 = () => {
                   <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
                   <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
                 </div>
+              </div>
+              <div className="bg-black text-white absolute w-full text-center p-2 bottom-20 opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
+                Add to Cart
               </div>
               <div className="mt-4">
                 <div>
@@ -104,7 +111,7 @@ const ExploreProduct1 = () => {
               </div>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-6 group relative">
               <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
                 <img
                   src="../images/Explore-9.png"
@@ -116,7 +123,10 @@ const ExploreProduct1 = () => {
                   <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
                 </div>
               </div>
-              <div className="mt-4">
+              <div className="bg-black text-white absolute w-full text-center p-2 bottom-20 opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
+                Add to Cart
+              </div>
+              <div className="mt-4 group relative">
                 <div>
                   <p className="text-sm font-medium">RGB liquid CPU Cooler</p>
                   <div className="flex-col gap-2 mt-1">
@@ -140,7 +150,7 @@ const ExploreProduct1 = () => {
               </div>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-6 group relative">
               <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
                 <img
                   src="../images/Explore11.png"
@@ -151,6 +161,9 @@ const ExploreProduct1 = () => {
                   <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
                   <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
                 </div>
+              </div>
+              <div className="bg-black text-white absolute w-full text-center p-2 bottom-20 opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
+                Add to Cart
               </div>
               <div className="mt-4">
                 <div>

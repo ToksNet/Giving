@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
     discountRate,
     newProd,
   } = product;
-  
+
   return (
     <div className="flex flex-col group">
       <div className="p-5 basis-2/3 bg-gray-200 rounded-md relative flex items-center justify-center">
@@ -38,7 +38,8 @@ const ProductCard = ({ product }) => {
             height="16"
             viewBox="0 0 18 16"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               d="M5 1C2.7912 1 1 2.73964 1 4.88594C1 6.61852 1.7 10.7305 8.5904 14.8873C8.71383 14.961 8.85552 15 9 15C9.14448 15 9.28617 14.961 9.4096 14.8873C16.3 10.7305 17 6.61852 17 4.88594C17 2.73964 15.2088 1 13 1C10.7912 1 9 3.35511 9 3.35511C9 3.35511 7.2088 1 5 1Z"
               stroke="black"
@@ -53,7 +54,8 @@ const ProductCard = ({ product }) => {
             height="16"
             viewBox="0 0 22 16"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               d="M20.2565 6.962C20.7305 7.582 20.7305 8.419 20.2565 9.038C18.7635 10.987 15.1815 15 10.9995 15C6.81752 15 3.23552 10.987 1.74252 9.038C1.51191 8.74113 1.38672 8.37592 1.38672 8C1.38672 7.62408 1.51191 7.25887 1.74252 6.962C3.23552 5.013 6.81752 1 10.9995 1C15.1815 1 18.7635 5.013 20.2565 6.962V6.962Z"
               stroke="black"

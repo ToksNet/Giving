@@ -46,6 +46,7 @@ const ExploreProduct = () => {
                   </a>
                 </div>
               </div>
+
               <div className="mt-4">
                 <div>
                   <p className="text-sm font-medium">Breed Dry Dog Food</p>

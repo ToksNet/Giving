@@ -9,11 +9,8 @@ const NavBar = () => {
   return (
     <div className="fixed top-[49px] w-full h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center px-4 bg-white z-50">
       <div className="flex items-center justify-between w-full">
-        {/* GV3N MARKET PLACE */}
-        <div className="flex pl-4 items-center" style={{ width: "275px" }}>
-          <h1 className="font-bold pl-6 text-xxl" style={{ fontSize: "22px" }}>
-            GV3N MARKET PLACE
-          </h1>
+        <div className="flex pl-4 items-center" style={{ width: "175px" }}>
+          <img src="./images/GV3N Blck PNG.png" />
         </div>
 
         {/* Search Form */}

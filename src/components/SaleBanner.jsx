@@ -15,7 +15,7 @@ const SaleBanner = () => {
         </span>
         <span className="font-bold underline">ShopNow</span>
       </div>
-      <div className="relative md:pr-9">
+      <div className="relative mr-20 md:pr-9">
         <button
           onClick={toggleDropdown}
           className="flex items-center focus:outline-none"
