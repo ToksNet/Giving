@@ -63,7 +63,7 @@ function TimerBanner() {
               <span className="mt-0 gap-y-0">Music Experience</span>
             </p>
             <div className="justify-left mt-6 mb-6 flex">
-              <CountdownTimer targetDate="2024-12-31T23:59:59" />
+              <CountdownTimer targetDate="2024-06-30T23:59:59" />
             </div>
             <div className="justify-left flex">
               <button className="bg-red-500 text-center text-white rounded-sm w-[100px] h-[40px]">
