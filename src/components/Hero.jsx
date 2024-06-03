@@ -4,18 +4,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight } from "react-icons/fa6";
+import "../index.css"
 
+const CustomNextArrow = () => null;
+const CustomPrevArrow = () => null;
 
 const Hero = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 4000,
-    cssEase: "linear"
+    cssEase: "linear",
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
   };
   return (
     <>
