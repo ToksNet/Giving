@@ -10,11 +10,11 @@ function Authnav() {
           <img src="/images/GV3N Blck PNG.png" />
         </div>
 
-        <div className="flex space-x-4 p-4  text-black">
+        <div className="flex space-x-10  text-black">
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "text-gray-300" : "text-black"
+              isActive ? "text-gray-300" : "text-black mr-20    "
             }
           >
             Home
@@ -38,7 +38,7 @@ function Authnav() {
           <NavLink
             to="/auth/signup"
             className={({ isActive }) =>
-              isActive ? "text-black-300" : "text-black"
+              isActive ? "text-black-300" : "text-black ml-10"
             }
           >
             Sign Up
