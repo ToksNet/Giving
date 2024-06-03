@@ -5,14 +5,13 @@ import CustomerService from "./CustomerService";
 import Advert from "./Advert";
 import NewAdvert from "./NewAdvert";
 import TodayProduct from "./TodayProduct";
-import HotSalesBanner from "./HotSalesBanner";
+// import HotSalesBanner from "./HotSalesBanner";
 import BeautySales from "../../components/BeautySales";
 import ExploreProduct from "../../components/ExploreProduct";
 import ExploreProduct1 from "../../components/ExploreProduct1";
 import NewArrival from "../../components/NewArrival";
 import BlackFriday from "../../components/BlackFriday";
 import TimerBanner from "../../components/TimerBanner";
-import ExploreProduct from "../components/ExploreProduct";
 
 const Home = () => {
   return (
@@ -20,7 +19,7 @@ const Home = () => {
       <Header />
       <Categories />
       <TodayProduct />
-      <HotSalesBanner />
+      {/* <HotSalesBanner /> */}
       <TimerBanner />
       <NewAdvert />
       <BlackFriday />
