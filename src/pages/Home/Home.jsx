@@ -7,10 +7,9 @@ import NewAdvert from "./NewAdvert";
 import TodayProduct from "./TodayProduct";
 // import HotSalesBanner from "./HotSalesBanner";
 import BeautySales from "../../components/BeautySales";
-<<<<<<< HEAD
 import ExploreProduct from "../../components/ExploreProduct";
 import ExploreProduct1 from "../../components/ExploreProduct1";
-// import NewArrival from "../../components/NewArrival";
+import NewArrival from "../../components/NewArrival";
 import BlackFriday from "../../components/BlackFriday";
 import TimerBanner from "../../components/TimerBanner";
 
@@ -19,7 +18,7 @@ const Home = () => {
     <div>
       <Header />
       <Categories />
-<<<<<<< HEAD
+      <TodayProduct />
       <TimerBanner />
       <NewAdvert />
       <BlackFriday />
