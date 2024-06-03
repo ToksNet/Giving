@@ -33,7 +33,7 @@ code {
 }
 
 .slick-dots li button:hover::before {
-  color: white !important;
+  color: #ffffffe5 !important;
 }
 
 .slick-dots li.slick-active button::before {
