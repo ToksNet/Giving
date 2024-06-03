@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Hero = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
