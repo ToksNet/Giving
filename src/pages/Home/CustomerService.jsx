@@ -3,7 +3,7 @@ import FeatureCard from "../../components/FeatureCard";
 
 const CustomerService = () => {
   return (
-    <div className="flex items-center justify-center space-x-[24px]">
+    <div className="flex items-center justify-center gap-20">
       <FeatureCard
         imageSrc="./images/Services.png"
         message1="FREE AND FAST DELIVERY"

@@ -45,7 +45,7 @@ function CountdownTimer({ targetDate }) {
   });
 
   return (
-    <div className="flex justify-center space-x-4 text-white">
+    <div className="flex justify-center  space-x-4 text-white">
       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
     </div>
   );

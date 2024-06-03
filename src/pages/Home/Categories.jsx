@@ -4,7 +4,8 @@ import { categoryImages } from '../../constants/constants'
 
 const Categories = () => {
   return (
-    <div className='categories my-10'>
+    <div className='border-t-[1px] mt-28 border-[#D4B4B4]'>
+    <div className='categories mx-20 my-10'>
         <div className='flex items-center gap-3' >
           <div className='bg-primary w-4 h-7 rounded '>
           </div>
@@ -25,11 +26,12 @@ const Categories = () => {
             </button>
          </div>
         </div>
-         <div className='mt-10 flex flex-wrap justify-between gap-2 items-center md:items-start '>
+         <div className='mt-10 flex justify-between gap-7 items-center md:items-start '>
          {categoryImages.map(category => (
           <CategoryCard key={category.id} image={category.image} name={category.name} />
         ))}
          </div>
+    </div>
     </div>
   )
 }

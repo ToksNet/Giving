@@ -7,7 +7,7 @@ const TodayProduct = () => {
   const initialTime = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
   return (
-    <div className='categories my-10'>
+    <div className='categories mx-20 my-10'>
     <div className='flex items-center gap-3' >
       <div className='bg-primary w-4 h-7 rounded '>
       </div>
