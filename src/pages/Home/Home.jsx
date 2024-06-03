@@ -4,6 +4,8 @@ import Categories from "./Categories";
 import CustomerService from "./CustomerService";
 import Advert from "./Advert";
 import NewAdvert from "./NewAdvert";
+import TodayProduct from "./TodayProduct";
+import HotSalesBanner from "./HotSalesBanner";
 import BeautySales from "../../components/BeautySales";
 import ExploreProduct from "../../components/ExploreProduct";
 import ExploreProduct1 from "../../components/ExploreProduct1";
@@ -17,6 +19,8 @@ const Home = () => {
     <div>
       <Header />
       <Categories />
+      <TodayProduct />
+      <HotSalesBanner />
       <TimerBanner />
       <NewAdvert />
       <BlackFriday />
