@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductCard from '../../components/ProductCard'
 
 const TodayProduct = () => {
   return (
@@ -24,7 +25,7 @@ const TodayProduct = () => {
      </div>
     </div>
      <div className='mt-10 flex flex-wrap justify-between gap-2 items-center md:items-start '>
-   
+      <ProductCard />
      </div>
 </div>
   )
