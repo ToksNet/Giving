@@ -23,6 +23,90 @@ code {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .product-scroll {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: 1px;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: 1px; /* Firefox */
+}
+
+.slick-dots {
+  bottom: 1rem;
+  left: -5.1rem !important;
+  width: inherit;
+}
+
+.slick-dots li button::before {
+  font-size: 10px !important;
+  margin: 0 5px;
+  border: none;
+  color: #ffffffa3 !important;
+  border-radius: 50%;
+  opacity: 1;
+  line-height: 19px;
+}
+
+.slick-dots li button:hover::before {
+  color: white !important;
+}
+
+.slick-dots li.slick-active button::before {
+  font-size: 12px !important;
+  margin: 0 5px;
+  border: 2px solid #fff;
+  color: #ff0000 !important;
+  border-radius: 50%;
+}
+
+.slick-dots {
+  bottom: 1rem;
+  left: -5.1rem !important;
+  width: inherit;
+}
+
+.slick-dots li button::before {
+  font-size: 10px !important;
+  margin: 0 5px;
+  border: none;
+  color: #ffffffa3 !important;
+  border-radius: 50%;
+  opacity: 1;
+  line-height: 19px;
+}
+
+.slick-dots li button:hover::before {
+  color: white !important;
+}
+
+.slick-dots li.slick-active button::before {
+  font-size: 12px !important;
+  margin: 0 5px;
+  border: 2px solid #fff;
+  color: #ff0000 !important;
+  border-radius: 50%;
+}
+
+.slick-dots {
+  bottom: 1rem;
+  left: -5.1rem !important;
+  width: inherit;
+}
+
+.slick-dots li button::before {
+  font-size: 10px !important;
+  margin: 0 5px;
+  border: none;
+  color: #ffffffa3 !important;
+  border-radius: 50%;
+  opacity: 1;
+  line-height: 19px;
+}
+
+.slick-dots li button:hover::before {
+  color: #ffffffe5 !important;
+}
+
+.slick-dots li.slick-active button::before {
+  font-size: 12px !important;
+  margin: 0 5px;
+  border: 2px solid #fff;
+  color: #ff0000 !important;
+  border-radius: 50%;
 }
