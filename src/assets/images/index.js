@@ -11,6 +11,7 @@ import prodimg4 from './products/prodimg4.png'
 import prodimg5 from './products/prodimg5.png'
 import prodimg6 from './products/prodimg6.png'
 import prodimg7 from './products/prodimg7.png'
+import prodimg8 from './products/prodimg8.png'
  
 
 export  {
@@ -26,5 +27,6 @@ export  {
     prodimg4,
     prodimg5,
     prodimg6,
-    prodimg7
+    prodimg7,
+    prodimg8
 }
