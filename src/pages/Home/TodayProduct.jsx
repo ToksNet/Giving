@@ -7,10 +7,9 @@ const TodayProduct = () => {
   const initialTime = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
   return (
-    <div className="categories my-10">
-      <div className="flex items-center gap-3">
-        <div className="bg-primary w-4 h-7 rounded "></div>
-        <h2 className="font-semibold  md:text-[16px] text-primary">Today’s</h2>
+    <div className='categories mx-20 my-10'>
+    <div className='flex items-center gap-3' >
+      <div className='bg-primary w-4 h-7 rounded '>
       </div>
       <div className="md:flex justify-between my-3">
         <h1 className="text-md md:text-[24px] font-semibold md:flex items-center gap-5">

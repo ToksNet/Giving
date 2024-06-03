@@ -3,7 +3,7 @@ import AdvertCard from "../../components/AdvertCard";
 
 const Advert = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white mx-32 px-8">
+    <div className="  bg-white mx-32 mb-28 ml-16 mr-10">
       <AdvertCard
         image1="./images/advert(1).png"
         image2="./images/advert(2).png"

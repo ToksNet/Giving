@@ -5,7 +5,7 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
     <div className="w-[1025px] justify-center  mt-4 bg-white p-8">
       <div className="flex items-center gap-3">
         <div className="h-3 bg-red-500 p-4 px-2 rounded-sm"></div>
-        <p className="text-sm text-red-500">Featured</p>
+        <p className="text-sm font-medium text-red-500">Featured</p>
       </div>
 
       <div className="flex items-center mt-5 justify-between">

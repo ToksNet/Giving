@@ -12,12 +12,12 @@ import { IoEyeOutline } from "react-icons/io5";
 const ExploreProduct = () => {
   return (
     <>
-      <div className="mx-32 mb-20 mr-12 mt-4">
+      <div className="mx-20 mb-20 mr-10 ml-32 mt-4">
         <div>
           <div className="mb-9">
             <div className="flex items-center gap-3">
               <div className="h-3 bg-red-500 p-4 px-2 rounded-sm"></div>
-              <p className="text-sm text-red-500">Our Products</p>
+              <p className="text-sm font-medium text-red-500">Our Products</p>
             </div>
 
             <div className="flex items-center mt-5 justify-between">

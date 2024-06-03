@@ -3,7 +3,7 @@ import BannercountDown from '../../components/BannercountDown'
 
 const HotSalesBanner = () => {
   return (
-    <div className='text-white bg-black p-10'>
+    <div className='text-white border-t-[1px] mx-20 bg-black p-10'>
         <h2>JBL Sales</h2>
         <div className='flex'>
          <div>
