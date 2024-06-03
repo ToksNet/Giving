@@ -12,7 +12,7 @@ import ExploreProduct1 from "../../components/ExploreProduct1";
 // import NewArrival from "../../components/NewArrival";
 import BlackFriday from "../../components/BlackFriday";
 import TimerBanner from "../../components/TimerBanner";
-import ExploreProduct from "../components/ExploreProduct";
+// import ExploreProduct from "../components/ExploreProduct";
 
 
 const Home = () => {
