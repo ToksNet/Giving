@@ -49,12 +49,12 @@ const ExploreProduct1 = () => {
                 <div>
                   <p className="text-sm font-medium">The north coat</p>
                   <div className="flex-col gap-2 mt-1">
-                    <div className="flex inline gap-2">
+                    <div className="flex gap-2">
                       <p className="text-sm text-orange-600 ">$260</p>
                       <p className="text-sm text-gray-600 line-through">$360</p>
                     </div>
 
-                    <div className="flex inline">
+                    <div className="flex">
                       <div className="flex">
                         <IoMdStar className="text-orange-400 w-5 h-5" />
                         <IoMdStar className="text-orange-400 w-5 h-5" />
@@ -84,12 +84,12 @@ const ExploreProduct1 = () => {
                 <div>
                   <p className="text-sm font-medium">RGB liquid CPU Cooler</p>
                   <div className="flex-col gap-2 mt-1">
-                    <div className="flex inline gap-2">
+                    <div className="flex gap-2">
                       <p className="text-sm text-orange-600 ">$160</p>
                       <p className="text-sm text-gray-600 line-through">$170</p>
                     </div>
 
-                    <div className="flex inline">
+                    <div className="flex">
                       <div className="flex">
                         <IoMdStar className="text-orange-400 w-5 h-5" />
                         <IoMdStar className="text-orange-400 w-5 h-5" />
@@ -120,12 +120,12 @@ const ExploreProduct1 = () => {
                 <div>
                   <p className="text-sm font-medium">RGB liquid CPU Cooler</p>
                   <div className="flex-col gap-2 mt-1">
-                    <div className="flex inline gap-2">
+                    <div className="flex gap-2">
                       <p className="text-sm text-orange-600 ">$160</p>
                       <p className="text-sm text-gray-600 line-through">$170</p>
                     </div>
 
-                    <div className="flex inline">
+                    <div className="flex">
                       <div className="flex">
                         <IoMdStar className="text-orange-400 w-5 h-5" />
                         <IoMdStar className="text-orange-400 w-5 h-5" />
@@ -156,12 +156,12 @@ const ExploreProduct1 = () => {
                 <div>
                   <p className="text-sm font-medium">RGB liquid CPU Cooler</p>
                   <div className="flex-col gap-2 mt-1">
-                    <div className="flex inline gap-2">
+                    <div className="flex gap-2">
                       <p className="text-sm text-orange-600 ">$160</p>
                       <p className="text-sm text-gray-600 line-through">$170</p>
                     </div>
 
-                    <div className="flex inline">
+                    <div className="flex">
                       <div className="flex">
                         <IoMdStar className="text-orange-400 w-5 h-5" />
                         <IoMdStar className="text-orange-400 w-5 h-5" />
