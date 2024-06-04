@@ -14,7 +14,7 @@ function Authnav() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "text-gray-300" : "text-black mr-20    "
+              isActive ? "text-gray-300" : "text-black"
             }
           >
             Home
