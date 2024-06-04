@@ -12,7 +12,7 @@ import { IoEyeOutline } from "react-icons/io5";
 const NewArrival = () => {
   return (
     <>
-      <div className="mx-32 mb-20 mr-12 mt-20">
+      <div className="mx-3 md:mx-20 mb-20 md:mr-6 mt-20">
         <div>
           <div className="mb-9">
             {/* <div className='flex items-center gap-3'>
@@ -29,10 +29,10 @@ const NewArrival = () => {
                     </div> */}
           </div>
           <div>
-            <div className="grid grid-cols-4">
+            <div className="grid grid-cols-2 gap-3 md:gap-0 md:grid-cols-4">
               <div className="mb-14">
                 <div>
-                  <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-7 bg-gray-200">
+                  <div className="flex items-start  md:w-52 py-2 pb-6 md:pr-1  md:pl-7 gap-7 bg-gray-200">
                     <img
                       src="../images/Explore-2.png"
                       className="pl-7 mt-4 w-28"
@@ -45,7 +45,7 @@ const NewArrival = () => {
                       {/* <a href="#"><IoEyeOutline  className='p-1 w-7 h-7 bg-white rounded-full'/></a> */}
                     </div>
                   </div>
-                  <button className="bg-black text-white w-52 py-2">
+                  <button className="bg-black text-white w-[177px] md:w-[170px] md:md:w-52 py-2">
                     Add To Cart
                   </button>
                 </div>
@@ -71,10 +71,10 @@ const NewArrival = () => {
               </div>
 
               <div className="">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pl-7 pb-6 pr-1  md:pl-7 bg-gray-200">
                   <img
                     src="../images/NewArrival-1.png"
-                    className=" mt-14 w-36 h-24"
+                    className=" mt-14 w-28 md:w-36 h-24"
                     alt="Explore Image 1"
                   />
                   <div className="flex flex-col gap-2 items-center">
@@ -115,7 +115,7 @@ const NewArrival = () => {
               </div>
 
               <div className="">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:md:w-52 py-2 pb-6 pr-1 pl-4  md:pl-7 md:gap-3 bg-gray-200">
                   <img
                     src="../images/TheNorthCoat.png"
                     className=" mt-4 w-32"
@@ -159,7 +159,7 @@ const NewArrival = () => {
               </div>
 
               <div className="">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-7 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1  md:pl-7 gap-7 bg-gray-200">
                   <img
                     src="../images/Explore-1.jpg"
                     className="pl-7 mt-4 w-28"
@@ -196,10 +196,10 @@ const NewArrival = () => {
               </div>
 
               <div className="">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-4  md:pl-7 gap-3 bg-gray-200">
                   <img
                     src="../images/Explore-8.png"
-                    className=" mt-5 h-32 w-32"
+                    className=" mt-5 h-32 w-28 md:w-32"
                     alt="Explore Image 1"
                   />
                   <div className="flex flex-col gap-2 items-center">
@@ -248,7 +248,7 @@ const NewArrival = () => {
               </div>
 
               <div className="">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  gap-5 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1  md:gap-5 bg-gray-200">
                   <p className="text-white bg-green-400 text-xs ml-1 px-1">
                     NEW
                   </p>
@@ -307,11 +307,11 @@ const NewArrival = () => {
               </div>
 
               <div className="">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  gap-2 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1  md:gap-2 bg-gray-200">
                   <p className="text-white bg-green-400 text-xs ml-1 px-1">
                     NEW
                   </p>
-                  <div className="flex gap-3">
+                  <div className="flex md:gap-3">
                     <img
                       src="../images/Explore-5.png"
                       className="mt-10 mb-7 w-28"
@@ -361,7 +361,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-4  md:pl-7 md:gap-3 bg-gray-200">
                   <img
                     src="../images/Explore-8.png"
                     className=" mt-5 h-32 w-32"
@@ -413,7 +413,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-4  md:pl-7 md:gap-3 bg-gray-200">
                   <img
                     src="../images/Explore-3.png"
                     className=" mt-4 w-32"
@@ -452,7 +452,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-3 md:pl-7 md:gap-3 bg-gray-200">
                   <img
                     src="../images/Explore-6.png"
                     className="pl- mt-5 h-32 w-32"
@@ -504,14 +504,14 @@ const NewArrival = () => {
 
               <div className="mt-10">
                 <div>
-                  <div className="flex items-start w-52 py-2 pb-6 pr-1  gap-2 bg-gray-200">
+                  <div className="flex items-start md:w-52 py-2 pb-6 md:pr-1  md:gap-2 bg-gray-200">
                     <p className="text-white bg-red-700 text-xs ml-1 px-1">
                       -35%
                     </p>
-                    <div className="flex gap-3">
+                    <div className="flex md:gap-3">
                       <img
                         src="../images/GucciDuffleBag.png"
-                        className="mt-8 w-28"
+                        className="mt-8 w-[113px] md:w-28"
                         alt="Explore Image 1"
                       />
                       <div className="flex flex-col gap-2 items-center">
@@ -522,7 +522,7 @@ const NewArrival = () => {
                       </div>
                     </div>
                   </div>
-                  <button className="bg-black text-white flex items-center pl-10 text-xs text-center gap-1 w-52 py-2">
+                  <button className="bg-black text-white flex items-center pl-10 text-xs text-center gap-1 w-44 md:w-52 py-2">
                     <span>
                       <IoCartOutline className="text-xl" />
                     </span>
@@ -556,11 +556,11 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1 gap-5 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 md:gap-5 bg-gray-200">
                   <p className="text-white bg-green-400 text-xs ml-1 px-1">
                     NEW
                   </p>
-                  <div className="flex gap-3">
+                  <div className="flex gap-2 md:gap-3">
                     <img
                       src="../images/Explore-7.png"
                       className="mt-9 mb-8 w-24"
@@ -615,7 +615,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-10 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-4 md:pl-10 gap-3 bg-gray-200">
                   <img
                     src="../images/SmallBookShelf.png"
                     className=" mt-5 w-28 h-32"
@@ -655,7 +655,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-2  md:pl-7 gap-2 md:gap-3 bg-gray-200">
                   <img
                     src="../images/Explore-3.png"
                     className=" mt-4 w-32"
@@ -695,7 +695,7 @@ const NewArrival = () => {
 
               <div className="mt-10">
                 <div>
-                  <div className="flex items-start w-52 py-2 pb-6 pr-1 pl-10 gap-2 bg-gray-200">
+                  <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-4 md:pl-10 gap-2 bg-gray-200">
                     {/* <p className='text-white bg-red-700 text-xs ml-1 px-1'>-35%</p> */}
                     <div className="flex gap-3">
                       <img
@@ -711,7 +711,7 @@ const NewArrival = () => {
                       </div>
                     </div>
                   </div>
-                  <button className="bg-black text-white flex items-center pl-10 text-xs text-center gap-1 w-52 py-2">
+                  <button className="bg-black text-white flex items-center pl-10 text-xs text-center gap-1 w-[177px] md:w-52 py-2">
                     <span>
                       <IoCartOutline className="text-xl" />
                     </span>
@@ -749,14 +749,14 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  gap-2 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1  md:gap-2 bg-gray-200">
                   <p className="text-white bg-green-400 text-xs ml-1 px-1">
                     NEW
                   </p>
-                  <div className="flex gap-3">
+                  <div className="flex md:gap-3">
                     <img
                       src="../images/Explore-5.png"
-                      className="mt-10 mb-8 w-28 "
+                      className="mt-10 mb-8 w-[108px] md:w-28 "
                       alt="Explore Image 1"
                     />
                     <div className="flex flex-col gap-2 items-center">
@@ -803,7 +803,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-4  md:pl-7 md:gap-3 bg-gray-200">
                   <img
                     src="../images/TheNorthCoat.png"
                     className=" mt-4 w-32"
@@ -845,7 +845,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-4 md:pl-7 md:gap-3 bg-gray-200">
                   <img
                     src="../images/GucciDuffleBag.png"
                     className=" mt-8 mb-6 w-32"
@@ -889,10 +889,10 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1  md:pl-7 bg-gray-200">
                   <img
                     src="../images/NewArrival-1.png"
-                    className=" mt-14 mb-5 w-36"
+                    className=" mt-14 mb-5 w-[145px] md:w-36"
                     alt="Explore Image 1"
                   />
                   <div className="flex flex-col gap-2 items-center">
@@ -933,7 +933,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-10 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-4 md:pl-10 gap-3 bg-gray-200">
                   <img
                     src="../images/SmallBookShelf.png"
                     className=" mt-5 w-28 h-32"
@@ -975,7 +975,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-3 md:pl-7 md:gap-3 bg-gray-200">
                   <img
                     src="../images/Explore-3.png"
                     className=" mt-4 w-32"
@@ -1012,7 +1012,7 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 pl-3 md:pl-7 md:gap-3 bg-gray-200">
                   <img
                     src="../images/Explore-6.png"
                     className="pl- mt-5 h-32 w-32"
@@ -1064,14 +1064,14 @@ const NewArrival = () => {
 
               <div className="mt-10">
                 <div>
-                  <div className="flex items-start w-52 py-2 pb-6 pr-1  gap-2 bg-gray-200">
+                  <div className="flex items-start md:w-52 py-2 pb-6 pr-1  md:gap-2 bg-gray-200">
                     <p className="text-white bg-red-700 text-xs ml-1 px-1">
                       -35%
                     </p>
-                    <div className="flex gap-3">
+                    <div className="flex md:gap-3">
                       <img
                         src="../images/GucciDuffleBag.png"
-                        className="mt-8 w-28"
+                        className="mt-8 w-[109px] md:w-28"
                         alt="Explore Image 1"
                       />
                       <div className="flex flex-col gap-2 items-center">
@@ -1082,7 +1082,7 @@ const NewArrival = () => {
                       </div>
                     </div>
                   </div>
-                  <button className="bg-black text-white flex items-center pl-10 text-xs text-center gap-1 w-52 py-2">
+                  <button className="bg-black text-white flex items-center pl-10 text-xs text-center gap-1 w-44 md:w-52 py-2">
                     <span>
                       <IoCartOutline className="text-xl" />
                     </span>
@@ -1118,11 +1118,11 @@ const NewArrival = () => {
               </div>
 
               <div className="mt-10">
-                <div className="flex items-start w-52 py-2 pb-6 pr-1 gap-5 bg-gray-200">
+                <div className="flex items-start md:w-52 py-2 pb-6 pr-1 md:gap-5 bg-gray-200">
                   <p className="text-white bg-green-400 text-xs ml-1 px-1">
                     NEW
                   </p>
-                  <div className="flex gap-3">
+                  <div className="flex justify-between md:gap-3">
                     <img
                       src="../images/Explore-7.png"
                       className="mt-9 mb-8 w-24"
@@ -1177,9 +1177,9 @@ const NewArrival = () => {
               </div>
             </div>
 
-            {/* <div className='mt-10 text-center'>
-                        <a href="#" className='text-xs font-medium bg-red-500 text-white rounded px-5 py-2'>View All Products</a>
-                    </div> */}
+            <div className='mt-10 text-center'>
+                        <a href="#" className='text-lg font-medium bg-red-500 text-white rounded p-5 px-10'>View All</a>
+                    </div>
           </div>
         </div>
       </div>

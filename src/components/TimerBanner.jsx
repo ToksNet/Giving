@@ -35,7 +35,7 @@ function CountdownTimer({ targetDate }) {
     }
 
     timerComponents.push(
-      <div key={interval} className="flex flex-col items-center mx-2">
+      <div key={interval} className="flex flex-col items-center md:mx-2">
         <div className="text-[12px] font-bold text-black bg-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
           {timeLeft[interval]}
         </div>
@@ -53,13 +53,13 @@ function CountdownTimer({ targetDate }) {
 
 function TimerBanner() {
   return (
-    <div className="mx-7 h-[628px] mt-5  flex justify-center items-center">
-      <div className="w-[1025px] bg-black flex justify-end content-center">
-        <div className="relative flex items-end justify-center">
-          <div className="relative content-center justify-start top-[-60px] left-9 text-white flex flex-col space-y-2">
-            <p className="text-[16px]">JBL Sales</p>
-            <p className="text-[38px] gap-y-0 font-bold">
-              <span>Enhance Your</span>{" "}
+    <div className="md:mx-7 h-[628px] mt-20 md:mt-10 border-t-[1px] pt-10  flex justify-center items-center">
+      <div className="w-screen relative md:w-[1025px] bg-black flex md:justify-end md:content-center">
+        <div className="relative  flex flex-col-reverse md:flex-row  md:items-end md:justify-center">
+          <div className="md:relative ml-4 md:content-center justify-start md:top-[-60px] left-3 mb-24 md:mb-0 md:left-9 text-white flex flex-col space-y-4">
+            <p className="text-lg font-medium md:text-[16px] absolute top-3 left-3">JBL Sales</p>
+            <p className="md:text-[38px] text-4xl flex flex-col gap-y-0 font-bold">
+              <span className="">Enhance Your</span>{" "}
               <span className="mt-0 gap-y-0">Music Experience</span>
             </p>
             <div className="justify-left mt-6 mb-6 flex">
@@ -71,8 +71,8 @@ function TimerBanner() {
               </button>
             </div>
           </div>
-          <div className="absolute top-[205px] left-[270px] w-[200px]">
-            <img src="/images/salesTag.png" alt="Sales Tag" />
+          <div className="absolute w-32 bottom-3 right-[350px] md:top-[205px] md:left-[270px] md:w-[200px]">
+            <img src="/images/salesTag.png" className="w-" alt="Sales Tag" />
           </div>
           <div className="relative w-[650px] h-[full] flex justify-right items-center">
             <div className="w-[900px] h-full">
@@ -82,7 +82,7 @@ function TimerBanner() {
               <img
                 src="/images/jbl-speaker.png"
                 alt="JBL Speaker"
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto h-auto max-w-full max-h-full"
+                className="absolute top-24 left-44 md:top-1/2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 md:w-auto md:h-auto md:max-w-full md:max-h-full"
               />
             </div>
           </div>

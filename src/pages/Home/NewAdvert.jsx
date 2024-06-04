@@ -3,7 +3,7 @@ import AdvertCard from "../../components/NewAdvertCard";
 
 const NewAdvert = () => {
   return (
-    <div className=" min-h-screen w-full bg-white ml-[55px]">
+    <div className=" md:min-h-screen md:w-full bg-white md:ml-[55px]">
       <AdvertCard
         image1="./images/advert(1).png"
         image2="./images/advert(2).png"
