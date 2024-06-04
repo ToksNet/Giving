@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="flex flex-col group">
-      <div className="p-5 basis-2/3 bg-gray-200 rounded-md relative flex items-center justify-center">
+      <div className="p-5 basis-2/3 bg-gray-200 relative flex items-center justify-center">
         <img className="w-[10rem]" src={image} alt={prodName} />
         <div className="absolute top-3 left-3 space-x-1">
           {discountRate && (
