@@ -10,7 +10,7 @@ import { RiMenu4Fill } from "react-icons/ri";
 
 const NavBar = () => {
   return (
-    <div className="fixed top-[49px] w-full h-12 pt-3 md:h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center md:px-4 bg-white z-50">
+    <div className="fixed top-[45px] w-full h-12 pt-3 md:h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center md:px-4 bg-white z-50">
       <div className="flex items-center justify-between w-full">
         {/* GV3N MARKET PLACE */}
         <div className="flex pl-4 items-center" style={{ width: "275px" }}>

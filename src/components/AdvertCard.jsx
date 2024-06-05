@@ -69,11 +69,11 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
               </div>
             </div>
 
-            <div className="relative md:w-[270px] bg-black md:rounded-md rounded-l-md flex items-center md:justify-center">
+            <div className="relative  md:w-[270px] bg-black md:rounded-md rounded-l-md flex items-center md:justify-center">
               <img
                 src={image4}
                 alt="Advert 4"
-                className="w-[190px] h-[221px]"
+                className="md:w-[190px] h-[221px]"
               />
               <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-md w-[242px] space-y-2">
                 <p className="text-2xl">Perfume</p>
