@@ -69,6 +69,13 @@ const ExploreProduct1 = () => {
       rating: 4,
       reviews: 145,
     },
+    {
+      imageSrc: "../images/Explore-1.jpg",
+      title: "Curology Product Set",
+      price: "$500",
+      rating: 4,
+      reviews: 145,
+    },
   ];
 
   return (
@@ -87,7 +94,7 @@ const ExploreProduct1 = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-7">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-7">
         {products.map((product, index) => (
           <ProductCard key={index} {...product} />
         ))}
