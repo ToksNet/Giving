@@ -1,11 +1,10 @@
 import React from "react";
 import Header from "./Header";
 import Categories from "./Categories";
-import TodayProduct from './TodayProduct'
+import TodayProduct from "./TodayProduct";
 import CustomerService from "./CustomerService";
 import Advert from "./Advert";
 import NewAdvert from "./NewAdvert";
-import TodayProduct from "./TodayProduct";
 // import HotSalesBanner from "./HotSalesBanner";
 import BeautySales from "../../components/BeautySales";
 import ExploreProduct from "../../components/ExploreProduct";
@@ -14,7 +13,6 @@ import NewArrival from "../../components/NewArrival";
 import BlackFriday from "../../components/BlackFriday";
 import TimerBanner from "../../components/TimerBanner";
 // import ExploreProduct from "../components/ExploreProduct";
-
 
 const Home = () => {
   return (
@@ -33,8 +31,8 @@ const Home = () => {
       <ExploreProduct />
       <Advert />
       <CustomerService />
-      </div >
-  )
-}
+    </div>
+  );
+};
 
 export default Home;
