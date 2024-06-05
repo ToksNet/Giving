@@ -12,11 +12,15 @@ import ExploreProduct1 from "../../components/ExploreProduct1";
 import NewArrival from "../../components/NewArrival";
 import BlackFriday from "../../components/BlackFriday";
 import TimerBanner from "../../components/TimerBanner";
+import Hero from "../../components/Hero";
 // import ExploreProduct from "../components/ExploreProduct";
 
 const Home = () => {
   return (
+    <>
+    <Hero />
     <div className=" container mx-auto px-3 md:px-10">
+
       <Header />
       <Categories />
       <TodayProduct />
@@ -32,6 +36,8 @@ const Home = () => {
       <Advert />
       <CustomerService />
     </div>
+    </>
+    
   );
 };
 
