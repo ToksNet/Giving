@@ -17,11 +17,15 @@ function BlackFriday() {
             alt="Black sales"
             className="w-full h-auto  "
           />
-
         </div>
         <div className="md:hidden">
-            <a href="#" className="relative bg-red-500 p-2 text-white rounded text-lg bottom-9 left-32 font-medium">Shop Now!</a>
-          </div>
+          <a
+            href="#"
+            className="relative bg-red-500 p-2 text-white rounded text-lg bottom-9 left-32 font-medium"
+          >
+            Shop Now!
+          </a>
+        </div>
       </div>
     </div>
   );

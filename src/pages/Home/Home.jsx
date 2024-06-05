@@ -21,7 +21,7 @@ const Home = () => {
       <Categories />
       <TodayProduct />
       {/* <TimerBanner /> */}
-      {/* <NewAdvert /> */}
+      <NewAdvert />
       <BlackFriday />
       {/* <ExploreProduct1 /> */}
       {/* <NewAdvert /> */}
