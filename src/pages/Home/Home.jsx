@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Categories from "./Categories";
+import TodayProduct from './TodayProduct'
 import CustomerService from "./CustomerService";
 import Advert from "./Advert";
 import NewAdvert from "./NewAdvert";
@@ -12,10 +13,12 @@ import ExploreProduct1 from "../../components/ExploreProduct1";
 import NewArrival from "../../components/NewArrival";
 import BlackFriday from "../../components/BlackFriday";
 import TimerBanner from "../../components/TimerBanner";
+// import ExploreProduct from "../components/ExploreProduct";
+
 
 const Home = () => {
   return (
-    <div>
+    <div className=" container md:mx-auto md:px-10">
       <Header />
       <Categories />
       <TodayProduct />
@@ -25,13 +28,13 @@ const Home = () => {
       <ExploreProduct1 />
       <NewAdvert />
       <NewArrival />
-      <ExploreProduct />
+      {/* <ExploreProduct /> */}
       <BeautySales />
       <ExploreProduct />
       <Advert />
       <CustomerService />
-    </div>
-  );
-};
+      </div >
+  )
+}
 
 export default Home;
