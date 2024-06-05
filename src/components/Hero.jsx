@@ -26,17 +26,6 @@ const Hero = () => {
     <>
       <div className='mt-28 mx-0 md:mt-32 md:mx-24 md:mr-16'>
         <div className='flex w-full'> 
-            <div className='border-r-[1px] hidden md:flex flex-col border-[#D4B4B4] pr-3 pt-14'>
-                <a href='#' className='flex gap-11 items-center mb-[10px]'><span>Women's Fashion</span><FaAngleRight className="w-4 h-4" /></a>
-                <a href='#' className='flex gap-11 items-center mb-[10px]'><span>Women's Fashion</span> <FaAngleRight className="w-4 h-4" /></a>
-                <a href='#' className='mb-[9px]'>Electronics</a>
-                <a href='#' className='mb-[9px]'>Home & Lifestyle</a>
-                <a href='#' className='mb-[9px]'>Medicine</a>
-                <a href='#' className='mb-[9px]'>Sport & Outdoor</a>
-                <a href='#' className='mb-[9px]'>Baby's & Toy</a>
-                <a href='#' className='mb-[9px]'>Groceries & Pets</a>
-                <a href='#' className='mb-[9px]'>Health & Beauty</a>
-            </div>
 
             <div className='flex flex-col-reverse md:flex-row w-4/5 md:pt-14 md:pl-12'>
               <div className='bg-black w-screen  h-52 md:w-3/6 md:h-[300px] pl-12 mt-5 md:mt-0 md:pt-12'>
