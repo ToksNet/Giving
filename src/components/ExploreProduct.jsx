@@ -12,7 +12,7 @@ import { IoEyeOutline } from "react-icons/io5";
 const ExploreProduct = () => {
   return (
     <>
-      <div className="md:mx-20 mb-20 px-3 md:mr-5 mt-4">
+      <div className="mx-3 md:mx-20 mb-20 px-3 md:mr-5 mt-4">
         <div>
           <div className="mb-9">
             <div className="flex items-center gap-3">
@@ -174,10 +174,10 @@ const ExploreProduct = () => {
                     alt="Explore Image 1"
                   />
                 </div>
-                  <div className="flex flex-col gap-2 items-center">
-                    <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
-                    <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
-                  </div>
+                <div className="flex flex-col gap-2 items-center">
+                  <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
+                  <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
+                </div>
               </div>
               <div className="mt-4">
                 <div>
@@ -265,10 +265,10 @@ const ExploreProduct = () => {
                     alt="Explore Image 1"
                   />
                 </div>
-                  <div className="flex flex-col gap-2 items-center">
-                    <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
-                    <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
-                  </div>
+                <div className="flex flex-col gap-2 items-center">
+                  <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
+                  <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
+                </div>
               </div>
               <div className="mt-4">
                 <div>

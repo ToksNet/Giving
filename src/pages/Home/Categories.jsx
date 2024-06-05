@@ -1,23 +1,70 @@
-import React from "react";
+import React, { useRef } from "react";
+import Slider from "react-slick";
 import CategoryCard from "../../components/CategoryCard";
 import { categoryImages } from "../../constants/constants";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Categories = () => {
+  const sliderRef = useRef(null);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    touchMove: true,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <div className="border-t-[1px] mx-3 mt-28 border-[#D4B4B4]">
-      <div className="categories md:mx-20 my-10">
+    <div className="mt-28 mx-4 md:mt-32 md:mx-32">
+      <div className="categories mx-auto my-10 w-full px-4">
         <div className="flex items-center gap-3">
-          <div className="bg-primary w-4 h-7 rounded "></div>
-          <h2 className="font-semibold  md:text-[16px] text-primary">
-            categories
+          <div className="bg-primary w-4 h-7 rounded"></div>
+          <h2 className="font-semibold md:text-[16px] text-primary">
+            Categories
           </h2>
         </div>
-        <div className="flex justify-between my-3">
-          <h1 className="tex-md md:text-[24px] font-semibold">
+        <div className="flex justify-between items-center my-3">
+          <h1 className="text-md md:text-[24px] font-semibold">
             Browse By Category
           </h1>
-          <div className="flex gap-3">
-            <button className="bg-gray-200 rounded-full p-2">
+          <div className="flex gap-1">
+            <button
+              className="bg-gray-200 rounded-full p-2"
+              onClick={() => sliderRef.current.slickPrev()}
+            >
               <svg
                 width="15"
                 height="13"
@@ -28,13 +75,16 @@ const Categories = () => {
                 <path
                   d="M8 1L1 8L8 15M1 8H17"
                   stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
-            <button className="bg-gray-200 rounded-full p-2">
+            <button
+              className="bg-gray-200 rounded-full p-2"
+              onClick={() => sliderRef.current.slickNext()}
+            >
               <svg
                 width="15"
                 height="13"
@@ -45,22 +95,22 @@ const Categories = () => {
                 <path
                   d="M1.5 8H18M18 8L11 1M18 8L11 15"
                   stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
           </div>
         </div>
-        <div className="mt-10 grid grid-cols-2 md:flex justify-between gap-5 items-center md:items-start ">
-          {categoryImages.map((category) => (
-            <CategoryCard
-              key={category.id}
-              image={category.image}
-              name={category.name}
-            />
-          ))}
+        <div className="mt-10">
+          <Slider {...settings} ref={sliderRef}>
+            {categoryImages.map((category) => (
+              <div key={category.id} className="px-[5px] w-full">
+                <CategoryCard image={category.image} name={category.name} />
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </div>

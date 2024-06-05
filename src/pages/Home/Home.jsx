@@ -16,21 +16,21 @@ import TimerBanner from "../../components/TimerBanner";
 
 const Home = () => {
   return (
-    <div className=" container md:mx-auto md:px-10">
+    <div className="">
       <Header />
       <Categories />
       <TodayProduct />
-      {/* <TimerBanner /> */}
+      <TimerBanner />
       <NewAdvert />
       <BlackFriday />
-      {/* <ExploreProduct1 /> */}
-      <NewAdvert />
-      {/* <NewArrival /> */}
+      <ExploreProduct1 />
+      {/* <NewAdvert /> */}
+      {/* <NewArrival />
       <ExploreProduct />
       <BeautySales />
-      <ExploreProduct />
-      <Advert />
-      <CustomerService />
+      <ExploreProduct /> */}
+      {/* <Advert /> */}
+      {/* <CustomerService />  */}
     </div>
   );
 };

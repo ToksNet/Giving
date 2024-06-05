@@ -15,10 +15,10 @@ const ProductCard = ({ product }) => {
   } = product;
 
   return (
-    <div className="flex flex-col group bg-white shadow-md">
-      <div className="container mx-auto relative flex items-center justify-center bg-gray-200 rounded-lg overflow-hidden">
+    <div className="flex flex-col group bg-white shadow-md w-full max-w-[220px] h-[350px]">
+      <div className="relative flex items-center justify-center bg-gray-200 rounded-lg overflow-hidden">
         <img
-          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+          className="w-full h-full object-cover"
           src={image}
           alt={prodName}
         />
