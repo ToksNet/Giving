@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles if needed */
+/* .container {
+  margin-left: 8rem; /* Equivalent to mx-32 */
+/* margin-right: 8rem; */
+/* }  */
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;

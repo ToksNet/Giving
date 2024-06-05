@@ -53,15 +53,16 @@ function CountdownTimer({ targetDate }) {
 
 function TimerBanner() {
   return (
-    <div className="mx-7 h-[628px] mt-5  flex justify-center items-center">
-      <div className="w-[1025px] bg-black flex justify-end content-center">
-        <div className="relative flex items-end justify-center">
-          <div className="relative content-center justify-start top-[-60px] left-9 text-white flex flex-col space-y-2">
+    <div className="container mx-7  mt-5   flex justify-center items-center">
+      <div className="mr-10  bg-black flex justify-end content-center">
+        <div className=" relative flex items-end justify-center">
+          <div className="  relative content-center justify-start top-[-60px] left-10 text-white flex flex-col space-y-2">
             <p className="text-[16px]">JBL Sales</p>
-            <p className="text-[38px] gap-y-0 font-bold">
-              <span>Enhance Your</span>{" "}
-              <span className="mt-0 gap-y-0">Music Experience</span>
-            </p>
+            <div className=" mx-auto my-10 w-[350px]">
+              <p className="text-[38px] gap-y-0 font-bold">
+                Enhance Your Music Experience
+              </p>
+            </div>
             <div className="justify-left mt-6 mb-6 flex">
               <CountdownTimer targetDate="2024-06-30T23:59:59" />
             </div>
@@ -71,20 +72,20 @@ function TimerBanner() {
               </button>
             </div>
           </div>
-          <div className="absolute top-[205px] left-[270px] w-[200px]">
+          <div className=" absolute top-[205px] left-[270px] w-[200px]">
             <img src="/images/salesTag.png" alt="Sales Tag" />
           </div>
-          <div className="relative w-[650px] h-[full] flex justify-right items-center">
-            <div className="w-[900px] h-full">
-              <img src="/images/BlurBg.png" alt="Blurred Background" />
-            </div>
-            <div className="ml-10">
-              <img
-                src="/images/jbl-speaker.png"
-                alt="JBL Speaker"
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto h-auto max-w-full max-h-full"
-              />
-            </div>
+        </div>
+        <div className="relative w-[650px] h-[full] flex items-center">
+          <div className="w-[900px] h-full">
+            <img src="/images/BlurBg.png" alt="Blurred Background" />
+          </div>
+          <div className="ml-10">
+            <img
+              src="/images/jbl-speaker.png"
+              alt="JBL Speaker"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto h-auto  max-h-full"
+            />
           </div>
         </div>
       </div>

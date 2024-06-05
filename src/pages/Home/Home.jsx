@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className=" container mx-auto px-3 md:px-10">
       <Header />
-      <Categories />
+      {/* <Categories />
       <TodayProduct />
       <TimerBanner />
       <NewAdvert />
@@ -30,7 +30,7 @@ const Home = () => {
       <BeautySales />
       <ExploreProduct />
       <Advert />
-      <CustomerService />
+      <CustomerService /> */}
     </div>
   );
 };

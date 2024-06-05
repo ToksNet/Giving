@@ -15,9 +15,13 @@ const ProductCard = ({ product }) => {
   } = product;
 
   return (
-    <div className="flex flex-col group">
-      <div className="p-5 basis-2/3 bg-gray-200 relative flex items-center justify-center">
-        <img className="w-[10rem]" src={image} alt={prodName} />
+    <div className="flex flex-col group bg-white shadow-md">
+      <div className="container mx-auto  relative flex items-center justify-center bg-gray-200 rounded-lg overflow-hidden">
+        <img
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+          src={image}
+          alt={prodName}
+        />
         <div className="absolute top-3 left-3 space-x-1">
           {discountRate && (
             <span className="text-white text-xs py-1 px-3 bg-primary rounded-md">
@@ -72,17 +76,17 @@ const ProductCard = ({ product }) => {
             />
           </svg>
         </div>
-        <div className="bg-black text-white absolute bottom-0 w-full text-center p-2 rounded-b-md opacity-0 group-hover:opacity-100  group-hover:cursor-pointer transition-opacity duration-300">
+        <div className="bg-black text-white absolute bottom-0 w-full text-center p-2 rounded-b-md opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
           Add to Cart
         </div>
       </div>
-      <div className="basis-1/3 space-y-1 mt-2">
+      <div className="space-y-1 mt-2 text-center md:text-left">
         <h2 className="font-semibold">{prodName}</h2>
         <div className="space-x-2 text-sm font-semibold text-gray-400">
           <span className="text-primary">${discountPrice}</span>
           <span className="line-through">${price}</span>
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex justify-center md:justify-start gap-2 items-center">
           <Star starsNo={starsNo} /> ({reviewsNo})
         </div>
       </div>
