@@ -24,12 +24,12 @@ const Home = () => {
       <NewAdvert />
       <BlackFriday />
       {/* <ExploreProduct1 /> */}
-      {/* <NewAdvert /> */}
+      <NewAdvert />
       {/* <NewArrival /> */}
       <ExploreProduct />
       <BeautySales />
       <ExploreProduct />
-      {/* <Advert /> */}
+      <Advert />
       <CustomerService />
     </div>
   );
