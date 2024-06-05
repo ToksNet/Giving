@@ -12,7 +12,7 @@ import { IoEyeOutline } from "react-icons/io5";
 const ExploreProduct = () => {
   return (
     <>
-      <div className="mx-20 mb-20 mr-10 ml-32 mt-4">
+      <div className="md:mx-20 mb-20 px-3 md:mr-5 mt-4">
         <div>
           <div className="mb-9">
             <div className="flex items-center gap-3">
@@ -22,16 +22,16 @@ const ExploreProduct = () => {
 
             <div className="flex items-center mt-5 justify-between">
               <p className="text-2xl font-medium">Explore Our Products</p>
-              <div className="flex text-sm mr-16 gap-2 items-center">
+              <div className="hidden md:flex text-sm mr-16 gap-2 items-center">
                 <FaArrowLeft className="p-2 w-8 h-8 bg-gray-200 rounded-full" />
                 <FaArrowRight className="p-2 w-8 h-8 bg-gray-200 rounded-full" />
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-4">
-            <div className="pb-10">
-              <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-7 bg-gray-200">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-7">
+            <div className="">
+              <div className="flex items-start w-full md:w-52 py-2 pb-6 justify-between px-2 bg-gray-200">
                 <img
                   src="../images/Explore-1.jpg"
                   className="pl-7 mt-5 w-28"
@@ -68,7 +68,7 @@ const ExploreProduct = () => {
 
             <div className="">
               <div>
-                <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-7 bg-gray-200">
+                <div className="flex items-start w-full md:w-52 py-2 pb-6 justify-between md:px-2 bg-gray-200">
                   <img
                     src="../images/Explore-2.png"
                     className="pl-7 mt-4 w-28"
@@ -79,7 +79,7 @@ const ExploreProduct = () => {
                     <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
                   </div>
                 </div>
-                <button className="bg-black text-white w-52 py-2">
+                <button className="bg-black text-white w-[169px] md:w-52 py-2">
                   Add To Cart
                 </button>
               </div>
@@ -103,10 +103,10 @@ const ExploreProduct = () => {
             </div>
 
             <div className="">
-              <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+              <div className="flex items-start w-full md:w-52 py-2 pb-6 justify-between px-2 bg-gray-200">
                 <img
                   src="../images/Explore-3.png"
-                  className=" mt-4 w-32"
+                  className="mt-4 w-32"
                   alt="Explore Image 1"
                 />
                 <div className="flex flex-col gap-2 items-center">
@@ -134,7 +134,7 @@ const ExploreProduct = () => {
             </div>
 
             <div className="">
-              <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-7 bg-gray-200">
+              <div className="flex items-start w-full md:w-52 py-2 pb-6 justify-between px-2 bg-gray-200">
                 <img
                   src="../images/Explore-1.jpg"
                   className="pl-7 mt-4 w-28"
@@ -165,19 +165,19 @@ const ExploreProduct = () => {
             </div>
 
             <div className="">
-              <div className="flex items-start w-52 py-2 pb-6 pr-1  gap-2 bg-gray-200">
+              <div className="flex items-start w-full h-[180px] md:w-52 py-2 pb-6 justify-between px-2 bg-gray-200">
                 <p className="text-white bg-green-400 text-xs ml-1 px-1">NEW</p>
-                <div className="flex gap-3">
+                <div className="">
                   <img
                     src="../images/Explore-5.png"
                     className="mt-10 mb-8 w-28"
                     alt="Explore Image 1"
                   />
+                </div>
                   <div className="flex flex-col gap-2 items-center">
                     <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
                     <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
                   </div>
-                </div>
               </div>
               <div className="mt-4">
                 <div>
@@ -198,7 +198,7 @@ const ExploreProduct = () => {
                     <img
                       src="../images/Ellipse 10.png"
                       className="w-3 h-3"
-                      alt="Elipse"
+                      alt="Ellipse"
                     />
                     <img
                       src="../images/Ellipse 8.png"
@@ -211,7 +211,7 @@ const ExploreProduct = () => {
             </div>
 
             <div className="">
-              <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+              <div className="flex items-start w-full md:w-52 py-2 pb-6 justify-between px-2 bg-gray-200">
                 <img
                   src="../images/Explore-6.png"
                   className="pl- mt-5 mb-4 w-32"
@@ -256,19 +256,19 @@ const ExploreProduct = () => {
             </div>
 
             <div className="">
-              <div className="flex items-start w-52 py-2 pb-6 pr-1  gap-2 bg-gray-200">
+              <div className="flex items-start w-full md:w-52 h-[180px] py-2 pb-6 justify-between px-2 bg-gray-200">
                 <p className="text-white bg-green-400 text-xs ml-1 px-1">NEW</p>
-                <div className="flex gap-3">
+                <div className="">
                   <img
                     src="../images/Explore-7.png"
                     className="mt-8 mb-5 w-28"
                     alt="Explore Image 1"
                   />
+                </div>
                   <div className="flex flex-col gap-2 items-center">
                     <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
                     <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
                   </div>
-                </div>
               </div>
               <div className="mt-4">
                 <div>
@@ -307,7 +307,7 @@ const ExploreProduct = () => {
             </div>
 
             <div className="">
-              <div className="flex items-start w-52 py-2 pb-6 pr-1  pl-7 gap-3 bg-gray-200">
+              <div className="flex items-start w-full md:w-52 py-2 pb-6 justify-between px-2 bg-gray-200">
                 <img
                   src="../images/Explore-8.png"
                   className=" mt-5 h-32 w-32"
@@ -356,7 +356,7 @@ const ExploreProduct = () => {
           <div className="text-center mt-16">
             <a
               href="#"
-              className="text-xs font-medium bg-red-500 text-white rounded px-5 py-2 "
+              className="text-lg font-medium bg-red-500 text-white rounded p-5 "
             >
               View All Prodects
             </a>

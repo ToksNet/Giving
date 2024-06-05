@@ -1,24 +1,25 @@
-import React, { useState } from "react";
-import { PiUserCircleFill } from "react-icons/pi";
+import React from "react";
+import { Link } from "react-router-dom";
 import {
-  // FaCartShopping,
+  FaShoppingCart,
   FaSearch,
   FaAngleDown,
   FaBars,
   FaAngleRight,
 } from "react-icons/fa";
+import { PiUserCircleFill } from "react-icons/pi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
   return (
-    <div className="fixed top-[49px] w-full h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center px-4 bg-white z-50">
+    <div className="fixed top-[47px] w-full h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center px-4 bg-white z-50">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
         <div className="flex pl-4 items-center" style={{ width: "175px" }}>
@@ -52,7 +53,7 @@ const NavBar = () => {
         <div className="md:hidden flex items-center space-x-4">
           <FaSearch className="text-gray-500 w-6 h-6" />
           <PiUserCircleFill className="w-6 h-6" />
-          {/* <FaCartShopping className="w-6 h-6" /> */}
+          <FaShoppingCart className="w-6 h-6" />
           <button onClick={toggleDropdown} className="focus:outline-none">
             <FaBars className="w-6 h-6" />
           </button>
@@ -76,7 +77,7 @@ const NavBar = () => {
 
           {/* Cart */}
           <div className="flex items-center space-x-2">
-            {/* <FaCartShopping className="w-8 h-8" /> */}
+            <FaShoppingCart className="w-8 h-8" />
             <span className="opacity-50">Cart</span>
             <FaAngleDown className="w-4 h-4" />
           </div>
@@ -87,35 +88,35 @@ const NavBar = () => {
       {dropdownOpen && (
         <div className="absolute top-[93px] right-0 mt-2 w-full bg-white text-black rounded-md shadow-lg z-50">
           <div className="border-r-[1px] flex flex-col border-[#D4B4B4] p-4">
-            <a href="#" className="flex gap-11 items-center mb-[10px]">
+            <Link to="/home" className="flex gap-11 items-center mb-[10px]">
               <span>Women's Fashion</span>
               <FaAngleRight className="w-4 h-4" />
-            </a>
-            <a href="#" className="flex gap-11 items-center mb-[10px]">
-              <span>Women's Fashion</span>
+            </Link>
+            <Link to="/home" className="flex gap-11 items-center mb-[10px]">
+              <span>Men's Fashion</span>
               <FaAngleRight className="w-4 h-4" />
-            </a>
-            <a href="#" className="mb-[9px]">
+            </Link>
+            <Link to="/home" className="mb-[9px]">
               Electronics
-            </a>
-            <a href="#" className="mb-[9px]">
+            </Link>
+            <Link to="/home" className="mb-[9px]">
               Home & Lifestyle
-            </a>
-            <a href="#" className="mb-[9px]">
+            </Link>
+            <Link to="/home" className="mb-[9px]">
               Medicine
-            </a>
-            <a href="#" className="mb-[9px]">
+            </Link>
+            <Link to="/home" className="mb-[9px]">
               Sport & Outdoor
-            </a>
-            <a href="#" className="mb-[9px]">
+            </Link>
+            <Link to="/home" className="mb-[9px]">
               Baby's & Toy
-            </a>
-            <a href="#" className="mb-[9px]">
+            </Link>
+            <Link to="/home" className="mb-[9px]">
               Groceries & Pets
-            </a>
-            <a href="#" className="mb-[9px]">
+            </Link>
+            <Link to="/home" className="mb-[9px]">
               Health & Beauty
-            </a>
+            </Link>
           </div>
         </div>
       )}

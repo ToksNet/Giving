@@ -4,11 +4,11 @@ import { categoryImages } from "../../constants/constants";
 
 const Categories = () => {
   return (
-    <div className="border-t-[1px] mt-28 border-[#D4B4B4]">
-      <div className="container mx-auto px-4 md:px-0">
+    <div className="border-t-[1px] mx-3 mt-28 border-[#D4B4B4]">
+      <div className="categories md:mx-20 my-10">
         <div className="flex items-center gap-3">
           <div className="bg-primary w-4 h-7 rounded "></div>
-          <h2 className="font-semibold md:text-[16px] text-primary">
+          <h2 className="font-semibold  md:text-[16px] text-primary">
             categories
           </h2>
         </div>
@@ -28,9 +28,9 @@ const Categories = () => {
                 <path
                   d="M8 1L1 8L8 15M1 8H17"
                   stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </button>
@@ -45,15 +45,15 @@ const Categories = () => {
                 <path
                   d="M1.5 8H18M18 8L11 1M18 8L11 15"
                   stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </button>
           </div>
         </div>
-        <div className="mt-10 flex justify-between gap-7 items-center md:items-start ">
+        <div className="mt-10 grid grid-cols-2 md:flex justify-between gap-5 items-center md:items-start ">
           {categoryImages.map((category) => (
             <CategoryCard
               key={category.id}

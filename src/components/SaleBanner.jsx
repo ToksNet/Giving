@@ -11,8 +11,10 @@ const SaleBanner = () => {
     <div className="fixed top-0 w-full h-12 bg-black text-white flex justify-between px-4 py-4 pt-3 z-50">
       <div className="flex-1 flex-col">
         <span className="text-xs block md:inline">
-          Summer Sales For All Swim Suits And Free Express Delivery - Off 50%!
-          <span className="font-bold underline">ShopNow</span>
+          Summer Sales For All Swim Suits And Free Express Delivery -
+        </span>
+        <span className="text-xs block md:inline">
+          Off 50%! <span className="font-bold underline">ShopNow</span>
         </span>
       </div>
       <div className="relative mr-4 md:mr-20">
