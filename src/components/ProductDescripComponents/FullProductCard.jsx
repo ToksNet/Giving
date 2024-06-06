@@ -61,7 +61,7 @@ const FullProductCard = () => {
             ({reviewsNo} Reviews )
           </span>{" "}
           <span className="text-gray-400">|</span>{" "}
-          <span style={{ color: instock ? "orange" : "red" }}>
+          <span className="text-sm" style={{ color: instock ? "orange" : "red" }}>
             {instock ? "In stock" : "Out of stock"}
           </span>
         </div>
