@@ -1,4 +1,4 @@
-import { catimg1,catimg2, catimg3,catimg4, catimg5, catimg6,prodimg1,prodimg2,prodimg3,prodimg4,prodimg5,prodimg6,prodimg7,prodimg8 } from "../assets/images";
+import { catimg1,catimg2, catimg3,catimg4, catimg5, catimg6,prodimg1,prodimg2,prodimg3,prodimg4,prodimg5,prodimg6,prodimg7,prodimg8,prod1,prod2,prod3,prod4,prod5 } from "../assets/images";
 
 
 export const categoryImages= [
@@ -177,9 +177,12 @@ export const categoryImages= [
   export const Prod1 =[
     {
         id: 1,
-        image: prodimg5,
+        image: prod5,
         otherImages:[
-          
+          prod1,
+          prod2,
+          prod3,
+          prod4
         ],
         prodName: "HAVIT HV-G92 Gamepad",
         price:160,
@@ -188,9 +191,9 @@ export const categoryImages= [
         starsNo:4,
         discountRate:40,
         availColors: [
-          { id: 1, name: "Red", code: "#FF0000" },
-          { id: 2, name: "Blue", code: "#0000FF" },
-          { id: 3, name: "Green", code: "#00FF00" },
+          { id: 1, name: "Gray", code: "#A0BCE0" },
+          { id: 2, name: "Pink", code: "#E07575" },
+
         ],
         availSizes: [
           { id: 1, name: "XS"},
