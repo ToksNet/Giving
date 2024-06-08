@@ -53,7 +53,7 @@ function CountdownTimer({ targetDate }) {
 
 function TimerBanner() {
   return (
-    <div className="container mx-auto px-4 my-1 border-t-[1px] pt-10 w-full">
+    <div className="container mx-auto my-1 border-t-[1px] pt-10 w-full">
       <div className="max-w-screen-xl mx-auto bg-black flex flex-col md:flex-row items-center justify-center md:justify-between relative">
         {/* JBL Sales Label */}
         <div className="absolute top-4 left-4 px-4 text-white">

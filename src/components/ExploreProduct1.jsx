@@ -11,47 +11,51 @@ const ProductCard = ({
   reviews,
 }) => {
   return (
-    <div className="w-270px group h-350px md:w-full md:max-w-[270px] md:h-[350px] relative">
-      <div className="flex flex-col justify-between bg-gray-200 h-250px w-270px md:h-[250px] md:w-[270px]">
-        <div>
-          <div className="relative h-180px w-190px md:h-[180px] md:w-[190px] mx-auto">
+    <div className="mb-14 w-full max-w-xs mx-auto">
+      <div className="group relative md:w-52">
+        <div className=" flex items-start md:w-52 py-2 pb-6 md:pr-1 md:pl-7 gap-7 bg-gray-200">
+          <div className="px-2 w-full h-48 flex items-center justify-center bg-gray-200">
             <img
               src={imageSrc}
-              className="w-full h-full object-cover"
+              className="object-contain w-full h-full"
               alt={title}
             />
           </div>
-          <div className=" bottom-0 left-0 w-full bg-black text-white text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Add to Cart
+          <div className="flex flex-col gap-2 items-center">
+            <a href="#">
+              <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
+            </a>
+            <a href="#">
+              <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
+            </a>
           </div>
         </div>
-        <div>
-          <div className="mt-4 px-2 flex-grow flex flex-col justify-end bg-white h-70px w-full md:h-[70px]">
-            <p className="text-sm md:text-base lg:text-lg font-medium">
-              {title}
-            </p>
-            <div className="block">
-              <p className="text-sm font-medium text-orange-700 pr-2 inline">
-                {price}
-              </p>
-              <p className="text-sm font-medium text-gray-500 inline line-through">
-                {originalPrice}
-              </p>
-            </div>
-            <div className="flex gap-2 mt-1 items-center justify-between">
-              <div className="flex">
-                {Array.from({ length: 5 }, (_, index) => (
-                  <IoMdStar
-                    key={index}
-                    className={`w-5 h-5 ${
-                      index < rating ? "text-orange-400" : "text-gray-300"
-                    }`}
-                  />
-                ))}
-              </div>
-              <p className="text-sm">({reviews})</p>
-            </div>
+        <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          Add to Cart
+        </div>
+      </div>
+      <div className="mt-4">
+        <p className="text-sm font-medium">{title}</p>
+        <div className="flex gap-2 mt-1">
+          <p className="text-sm font-medium text-orange-700 pr-2 inline">
+            {price}
+          </p>
+          <p className="text-sm font-medium text-gray-500 inline line-through">
+            {originalPrice}
+          </p>
+        </div>
+        <div className="flex gap-2 mt-1 items-center">
+          <div className="flex">
+            {Array.from({ length: 5 }, (_, index) => (
+              <IoMdStar
+                key={index}
+                className={`w-5 h-5 ${
+                  index < rating ? "text-orange-400" : "text-gray-300"
+                }`}
+              />
+            ))}
           </div>
+          <p className="text-sm">({reviews})</p>
         </div>
       </div>
     </div>
@@ -92,36 +96,30 @@ const ExploreProduct1 = () => {
       rating: 4,
       reviews: 145,
     },
-    {
-      imageSrc: "../images/Explore-1.jpg",
-      title: "Curology Product Set",
-      price: "$500",
-      originalPrice: "$600",
-      rating: 4,
-      reviews: 145,
-    },
   ];
 
   return (
-    <div className="mx-3 md:mx-32 px-4 mt-16">
-      <div className="mb-9">
-        <div className="flex items-center gap-3">
-          <div className="h-3 bg-red-500 p-4 px-2 rounded-sm"></div>
-          <p className="text-sm font-semibold text-red-500">This Month</p>
-        </div>
-        <div className="flex mt-5 items-end justify-between">
-          <p className="text-2xl font-medium">Best Selling Products</p>
-          <div className="flex text-sm gap-2 items-center">
-            <button className="bg-red-500 text-white rounded-sm w-[100px] h-[40px]">
-              View All
-            </button>
+    <div className="w-full ">
+      <div className=" px-4 mb-10 md:mx-32 mt-20">
+        <div className="mb-9">
+          <div className="flex items-center gap-3">
+            <div className="h-3 bg-red-500 p-4 px-2 rounded-sm"></div>
+            <p className="text-sm font-semibold text-red-500">This Month</p>
+          </div>
+          <div className="flex mt-5 items-end justify-between">
+            <p className="text-2xl font-medium">Best Selling Products</p>
+            <div className="flex text-sm gap-2 items-center">
+              <button className="bg-red-500 text-white rounded-sm w-[100px] h-[40px]">
+                View All
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-7">
-        {products.map((product, index) => (
-          <ProductCard key={index} {...product} />
-        ))}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7">
+          {products.map((product, index) => (
+            <ProductCard key={index} {...product} />
+          ))}
+        </div>
       </div>
     </div>
   );

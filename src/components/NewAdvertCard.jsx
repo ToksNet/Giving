@@ -2,7 +2,7 @@ import React from "react";
 
 const NewAdvertCard = ({ image1, image2, image3, image4 }) => {
   return (
-    <div className="container mx-auto p-4 mt-32 md:mt-0 bg-white md:p-8">
+    <div className=" mx-auto  md:mx-32 md:mt-0 bg-white md:p-8">
       <div className="mx-auto max-w-screen-lg">
         <div className="ml-3 md:ml-0">
           <div className="flex items-center gap-3">
@@ -15,7 +15,7 @@ const NewAdvertCard = ({ image1, image2, image3, image4 }) => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row md:justify-between mt-5">
+        <div className="w-full flex flex-col md:flex-row md:justify-between">
           <div className="relative w-full md:w-[590px] bg-black rounded-md flex md:items-end md:justify-center overflow-hidden">
             <img src={image1} alt="Advert 1" className="w-full h-auto mb-4" />
             <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-md w-[242px] space-y-2">
@@ -52,7 +52,7 @@ const NewAdvertCard = ({ image1, image2, image3, image4 }) => {
             </div>
 
             <div className="flex flex-row mt-1 md:mt-0 md:justify-between">
-              <div className="relative w-1/2 md:w-[270px] bg-black rounded-r-md flex items-center justify-center mb-4 md:mb-0 md:mr-4 overflow-hidden">
+              <div className="relative w-1/2 md:w-[270px] bg-black rounded-md flex items-center justify-center mb-4 md:mb-0 md:mr-4 overflow-hidden">
                 <img src={image3} alt="Advert 3" className="w-full h-auto" />
                 <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-md w-[242px] space-y-2">
                   <p className="text-2xl">Speakers</p>
@@ -65,7 +65,7 @@ const NewAdvertCard = ({ image1, image2, image3, image4 }) => {
                 </div>
               </div>
 
-              <div className="relative w-1/2 md:w-[270px] bg-black rounded-l-md flex items-center justify-center overflow-hidden">
+              <div className="relative w-1/2 md:w-[270px] bg-black rounded-md flex items-center justify-center overflow-hidden">
                 <img src={image4} alt="Advert 4" className="w-full h-auto" />
                 <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-md w-[242px] space-y-2">
                   <p className="text-2xl">Perfume</p>
