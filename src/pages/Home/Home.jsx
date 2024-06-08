@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <div className=" container mx-auto px-3 md:px-10">
+      <div className="">
         <Header />
         <Categories />
         <TodayProduct />
