@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const CountDown = ({ initialTime }) => {
   const calculateTimeLeft = () => {
@@ -27,25 +27,25 @@ const CountDown = ({ initialTime }) => {
   });
 
   return (
-    <div className='font-bold flex gap-2'>
+    <div className="font-bold flex gap-2">
       <div>
-        <h2 className='font-bold text-[0.6rem]'>Days</h2>
-        <h1 className='text-[1.3rem]'>{timeLeft.days || '0'}</h1>
+        <h2 className="font-bold text-[0.6rem]">Days</h2>
+        <h1 className="text-[1.3rem]">{timeLeft.days || "0"}</h1>
       </div>
-      <h1 className='text-primary text-xl self-end'>:</h1>
+      <h1 className="text-primary text-xl self-end">:</h1>
       <div>
-        <h2 className='font-bold text-[0.6rem]'>Hours</h2>
-        <h1 className='text-[1.3rem]'>{timeLeft.hours || '0'}</h1>
+        <h2 className="font-bold text-[0.6rem]">Hours</h2>
+        <h1 className="text-[1.3rem]">{timeLeft.hours || "0"}</h1>
       </div>
-      <h1 className='text-primary text-xl self-end'>:</h1>
+      <h1 className="text-primary text-xl self-end">:</h1>
       <div>
-        <h2 className='font-bold text-[0.6rem]'>Minutes</h2>
-        <h1 className='text-[1.3rem]'>{timeLeft.minutes || '0'}</h1>
+        <h2 className="font-bold text-[0.6rem]">Minutes</h2>
+        <h1 className="text-[1.3rem]">{timeLeft.minutes || "0"}</h1>
       </div>
-      <h1 className='text-primary text-xl self-end'>:</h1>
+      <h1 className="text-primary text-xl self-end">:</h1>
       <div>
-        <h2 className='font-bold text-[0.6rem]'>Seconds</h2>
-        <h1 className='text-[1.3rem]'>{timeLeft.seconds || '0'}</h1>
+        <h2 className="font-bold text-[0.6rem]">Seconds</h2>
+        <h1 className="text-[1.3rem]">{timeLeft.seconds || "0"}</h1>
       </div>
     </div>
   );
