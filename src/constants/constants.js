@@ -1,4 +1,4 @@
-import { catimg1,catimg2, catimg3,catimg4, catimg5, catimg6,prodimg1,prodimg2,prodimg3,prodimg4,prodimg5,prodimg6,prodimg7,prodimg8 } from "../assets/images";
+import { catimg1,catimg2, catimg3,catimg4, catimg5, catimg6,prodimg1,prodimg2,prodimg3,prodimg4,prodimg5,prodimg6,prodimg7,prodimg8,prod1,prod2,prod3,prod4,prod5 } from "../assets/images";
 
 
 export const categoryImages= [
@@ -172,4 +172,39 @@ export const categoryImages= [
         availColors: [
           ],
       },
+  ]
+
+  export const Prod1 =[
+    {
+        id: 1,
+        image: prod5,
+        otherImages:[
+          prod1,
+          prod2,
+          prod3,
+          prod4
+        ],
+        prodName: "HAVIT HV-G92 Gamepad",
+        price:160,
+        discountPrice:120,
+        reviewsNo:88,
+        starsNo:4,
+        discountRate:40,
+        availColors: [
+          { id: 1, name: "Gray", code: "#A0BCE0" },
+          { id: 2, name: "Pink", code: "#E07575" },
+
+        ],
+        availSizes: [
+          { id: 1, name: "XS"},
+          { id: 2, name: "S"},
+          { id: 3, name: "M"},
+          { id: 4, name: "L"},
+          { id: 5, name: "XL"},
+        ],
+        shortDescription:"PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.",
+        instock:true
+        
+      },
+      
   ]

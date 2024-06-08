@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles if needed */
-/* .container {
-  margin-left: 8rem; /* Equivalent to mx-32 */
-/* margin-right: 8rem; */
-/* }  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;

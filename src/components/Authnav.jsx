@@ -4,7 +4,7 @@ import { FaSearch, FaAngleDown } from "react-icons/fa";
 
 function Authnav() {
   return (
-    <div className="fixed top-[49px] w-full h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center px-4 bg-white z-50">
+    <div className="fixed top-[49px] w-full h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center bg-white z-50">
       <div className="flex items-center justify-between w-full">
         <div className="flex pl-4 items-center" style={{ width: "175px" }}>
           <img src="/images/GV3N Blck PNG.png" />
