@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       {" "}
       <Route path="/" element={<MainLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/product-details" element={<ProductDetails />} />
       </Route>
       <Route path="/auth" element={<AuthLayout />}>
         <Route path="/auth/Signin" element={<Signin />} />

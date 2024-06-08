@@ -12,25 +12,29 @@ import ExploreProduct1 from "../../components/ExploreProduct1";
 import NewArrival from "../../components/NewArrival";
 import BlackFriday from "../../components/BlackFriday";
 import TimerBanner from "../../components/TimerBanner";
+import Hero from "../../components/Hero";
 // import ExploreProduct from "../components/ExploreProduct";
 
 const Home = () => {
   return (
-    <div className="">
-      <Header />
-      <Categories />
-      <TodayProduct />
-      <TimerBanner />
-      <NewAdvert />
-      <BlackFriday />
-      <ExploreProduct1 />
-      <NewAdvert />
-      <NewArrival />
-      <BeautySales />
-      <ExploreProduct />
-      <Advert />
-      <CustomerService />
-    </div>
+    <>
+      <Hero />
+      <div className=" container mx-auto px-3 md:px-10">
+        <Header />
+        <Categories />
+        <TodayProduct />
+        <TimerBanner />
+        <NewAdvert />
+        <BlackFriday />
+        <ExploreProduct1 />
+        <NewAdvert />
+        <NewArrival />
+        <BeautySales />
+        <ExploreProduct />
+        <Advert />
+        <CustomerService />
+      </div>
+    </>
   );
 };
 
