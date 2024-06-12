@@ -2,8 +2,8 @@ import React from "react";
 
 const AdvertCard = ({ image1, image2, image3, image4 }) => {
   return (
-    <div className=" mx-auto  md:mx-32 md:mt-0 bg-white md:p-8">
-      <div className="mx-auto max-w-screen-lg">
+    <div className="md:mt-0 bg-white">
+      <div className="">
         <div className="ml-3 md:ml-0">
           <div className="flex items-center gap-3">
             <div className="h-3 bg-red-500 p-4 px-2 rounded-sm"></div>
@@ -15,8 +15,8 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row md:justify-between">
-          <div className="relative w-full md:w-[590px] bg-black rounded-md flex md:items-end md:justify-center overflow-hidden">
+        <div className="flex flex-col md:flex-row">
+          <div className="relative w-full md:w-[610px] bg-black rounded-md flex md:items-end md:justify-center overflow-hidden">
             <img src={image1} alt="Advert 1" className="w-full h-auto mb-4" />
             <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-md w-[242px] space-y-2">
               <p className="text-2xl">PlayStation 5</p>
@@ -31,7 +31,7 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
             </div>
           </div>
 
-          <div className="w-full md:w-[590px] mt-5 md:mt-0 flex flex-col justify-between md:ml-4">
+          <div className="w-full md:w-[610px] mt-5 md:mt-0 flex flex-col justify-between md:ml-4">
             <div className="relative w-full bg-black rounded-md flex md:items-end md:justify-end mb-4 overflow-hidden">
               <img
                 src={image2}
