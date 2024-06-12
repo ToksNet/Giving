@@ -12,33 +12,40 @@ const Categories = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     touchMove: true,
     responsive: [
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 440,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -49,7 +56,7 @@ const Categories = () => {
 
   return (
     <div className="mt-28 mx-4 md:mt-32 md:mx-32">
-      <div className="categories mx-auto my-10 w-full px-4">
+      <div className="categories mx-auto my-10 w-full md:px-4">
         <div className="flex items-center gap-3">
           <div className="bg-primary w-4 h-7 rounded"></div>
           <h2 className="font-semibold md:text-[16px] text-primary">

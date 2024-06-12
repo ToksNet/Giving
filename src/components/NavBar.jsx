@@ -14,16 +14,22 @@ import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 const NavBar = () => {
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
+  const [nav, setNav] = React.useState(false);
+
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
   return (
-    <div className="fixed top-[47px] w-full h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center px-4 bg-white z-50">
+    <div className="fixed top-[47px] w-full h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center pr-4 md:px-4 bg-white z-50">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
-        <div className="flex pl-4 items-center" style={{ width: "175px" }}>
-          <img src="./images/GV3N Blck PNG.png" alt="Logo" />
+        <div className="flex md:pl-4 pl-0 items-center">
+          <img
+            src="./images/GV3N Blck PNG.png"
+            className=" w-[120px] md:w-[175px]"
+            alt="Logo"
+          />
         </div>
 
         {/* Search Form */}
