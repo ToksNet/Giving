@@ -149,7 +149,7 @@ const ExploreProduct = () => {
 
             <div className="flex items-center mt-5 justify-between">
               <p className="text-2xl font-medium">Explore Our Products</p>
-              <div className="hidden md:flex text-sm mr-16 gap-2 items-center">
+              <div className="hidden md:flex text-sm gap-2 items-center">
                 <FaArrowLeft className="p-2 w-8 h-8 bg-gray-200 rounded-full" />
                 <FaArrowRight className="p-2 w-8 h-8 bg-gray-200 rounded-full" />
               </div>

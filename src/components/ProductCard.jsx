@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
     <div className="flex flex-col group bg-white shadow-md w-full max-w-[220px] h-[350px]">
       <div className="relative flex items-center justify-center bg-gray-200 rounded-lg overflow-hidden">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-[15rem] object-contain"
           src={image}
           alt={prodName}
         />
