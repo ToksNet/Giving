@@ -7,7 +7,7 @@ const HeaderNavigation = () => (
 );
 
 const ProductDetailsHeader = () => (
-  <div className="bg-red-500 mt-20 text-white py-4 px-4 flex justify-between">
+  <div className="bg-red-500 mt-22 text-white py-4 px-4 flex justify-between">
     <span>PRODUCT DETAILS</span>
     <span>PRICE</span>
     <span>QUANTITY</span>
