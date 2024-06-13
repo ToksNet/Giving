@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IoMdHeartEmpty, IoMdStar } from "react-icons/io";
 import { IoEyeOutline } from "react-icons/io5";
 
@@ -31,7 +32,7 @@ const ProductCard = ({
           </div>
         </div>
         <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          Add to Cart
+          <Link to="/product-details"> Add to Cart </Link>
         </div>
       </div>
       <div className="mt-4">
