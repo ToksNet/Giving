@@ -6,22 +6,24 @@ const AppCart = () => {
     {
       id: 1,
       name: "Product 1",
-      image: "/path/to/image1.jpg",
+      image: "./images/gamingpad.png",
       color: "Red",
       size: "M",
       price: 20,
       quantity: 1,
       shipping: 5,
+      description: "A great gaming pad for serious gamers.",
     },
     {
       id: 2,
       name: "Product 2",
-      image: "/path/to/image2.jpg",
+      image: "./images/GucciDuffleBag.png",
       color: "Blue",
       size: "L",
       price: 15,
       quantity: 2,
       shipping: 0,
+      description: "Stylish and spacious Gucci duffle bag.",
     },
     // more products
   ]);
