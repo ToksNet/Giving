@@ -170,7 +170,7 @@ const Footer = () => {
         <span className="mr-2">&copy;</span>
         <p className="inline-block">
           {" "}
-          Copyright Rimel 2024. All rights reserved.
+          Copyright GV3N 2024. All rights reserved.
         </p>
       </div>
     </footer>
