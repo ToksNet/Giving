@@ -2,12 +2,12 @@ import React from "react";
 
 const SellersDashboardList = ({ items = [] }) => {
   return (
-    <div className="p-2 lg:w-2/3 ">
+    <div className="p-2  lg:w-2/3 ">
       <div className="grid grid-cols-1  md:grid-cols-3 gap-5">
         {items.map((item, index) => (
           <div
             key={index}
-            className="border border-gray-300 rounded-lg p-2 flex items-center shadow-md"
+            className="border border-gray-300 md:h-[100px] rounded-lg p-2 flex items-center shadow-md"
           >
             <div className="relative flex-shrink-0 w-10 h-10 mr-3">
               <img
@@ -23,7 +23,7 @@ const SellersDashboardList = ({ items = [] }) => {
             </div>
             <div className="flex-1">
               <h3 className="font-medium mb-1">{item.title}</h3>
-              <p className="text-sm text-gray-600">{item.description}</p>
+              <p className="text-[10px] text-gray-600">{item.description}</p>
             </div>
           </div>
         ))}
