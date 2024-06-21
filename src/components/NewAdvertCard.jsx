@@ -51,7 +51,7 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
               </div>
             </div>
 
-            <div className="flex flex-row mt-1 md:mt-0 md:justify-between">
+            <div className="flex flex-row mt-1 gap-2 md:mt-0 md:justify-between">
               <div className="relative w-1/2 md:w-[270px] bg-black rounded-md flex items-center justify-center mb-4 md:mb-0 md:mr-4 overflow-hidden">
                 <img src={image3} alt="Advert 3" className="w-full h-auto" />
                 <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-md w-[242px] space-y-2">
@@ -65,7 +65,7 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
                 </div>
               </div>
 
-              <div className="relative w-1/2 md:w-[270px] bg-black rounded-md flex items-center justify-center overflow-hidden">
+              <div className="relative w-1/2 md:w-[270px] mb-4 md:mb-0 bg-black rounded-md flex items-center justify-center overflow-hidden">
                 <img src={image4} alt="Advert 4" className="w-full h-auto" />
                 <div className="absolute bottom-4 left-4 bg-transparent text-white p-4 rounded-md w-[242px] space-y-2">
                   <p className="text-2xl">Perfume</p>
