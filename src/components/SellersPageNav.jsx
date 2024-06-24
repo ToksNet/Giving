@@ -13,8 +13,8 @@ const SellersPageNav = () => {
   ];
 
   return (
-    <div className="w-full ">
-      <div className="hidden mx-40 lg:flex mt-40 items-center justify-between bg-[#FBECEC] w-[894px] h-[56px] rounded-md shadow-md p-2">
+    <div className="w-full items-center">
+      <div className="hidden mx-40 lg:flex mt-40  justify-between bg-[#FBECEC] w-[894px] h-[56px] rounded-md shadow-md p-2">
         {navItems.map((item) => (
           <NavLink
             key={item.name}
