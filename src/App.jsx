@@ -15,6 +15,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import SellersDashboard from "./pages/Sellers/SellersDashboard";
+import TrackOrder from "./pages/Sellers/TrackOrder";
+import Product from "./pages/Sellers/Product";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,6 +34,8 @@ const router = createBrowserRouter(
       </Route>
       <Route path="sellers" element={<SellersLayout />}>
         <Route path="dashboard" element={<SellersDashboard />} />
+        <Route path="track" element={<TrackOrder />} />
+        <Route path="product" element={<Product />} />
       </Route>
     </>
   )

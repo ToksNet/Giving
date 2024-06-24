@@ -4,9 +4,9 @@ import { AiOutlineMore } from "react-icons/ai"; // Assuming you're using react-i
 
 const SellersPageNav = () => {
   const navItems = [
-    { name: "Dashboard", path: "#" },
-    { name: "Track Orders", path: "/track-orders" },
-    { name: "Products", path: "/products" },
+    { name: "Dashboard", path: "/sellers/dashboard" },
+    { name: "Track Orders", path: "/sellers/track" },
+    { name: "Products", path: "/sellers/product" },
     { name: "Transaction", path: "/transaction" },
     { name: "Store Analytics", path: "/store-analytics" },
     { name: "Profile", path: "/profile" },
