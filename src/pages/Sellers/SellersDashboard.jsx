@@ -52,7 +52,7 @@ const SellersDashboard = () => {
   return (
     <>
       <SellersPageNav />
-      <div className="p-4 mt-20 md:mx-10">
+      <div className="p-4 md:mt-20 mt-40 md:mx-10">
         <h1 className="text-2xl ml-5 font-bold mb-4">Dashboard</h1>
         <div className="flex flex-col lg:flex-row gap-4">
           <SellersBalance />
