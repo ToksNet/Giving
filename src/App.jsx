@@ -17,6 +17,11 @@ import {
 import SellersDashboard from "./pages/Sellers/SellersDashboard";
 import TrackOrder from "./pages/Sellers/TrackOrder";
 import Product from "./pages/Sellers/Product";
+import Orders from "./components/Sellers/orders";
+import Delivered from "./components/Sellers/delivered";
+import Pending from "./components/Sellers/pending";
+import Cancelled from "./components/Sellers/cancelled";
+import ProductProvider from "./components/Sellers/ProductContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -36,11 +41,20 @@ const router = createBrowserRouter(
         <Route path="dashboard" element={<SellersDashboard />} />
         <Route path="track" element={<TrackOrder />} />
         <Route path="product" element={<Product />} />
+
+        <Route path="orders" element={<Orders />} />
+        <Route path="delivered" element={<Delivered />} />
+        <Route path="pending" element={<Pending />} />
+        <Route path="cancelled" element={<Cancelled />} />
       </Route>
     </>
   )
 );
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <ProductProvider>
+      <RouterProvider router={router} />;
+    </ProductProvider>
+  );
 };
 export default App;
