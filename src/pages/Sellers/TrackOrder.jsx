@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SellersPageNav from "../../components/SellersPageNav";
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineDown } from "react-icons/ai"; // Assuming you're using react-icons for the down arrow
+import ButtonGroup from "../../components/ButtonGroup";
 
 function TrackOrder() {
   const [showDateRange, setShowDateRange] = useState(false);
@@ -30,7 +31,7 @@ function TrackOrder() {
   return (
     <>
       <SellersPageNav />
-      <div className="p-4 md:mt-40  mt-40 md:mx-10">
+      <div className="p-4 md:mt-20  mt-40 md:mx-10">
         <div className="flex flex-col ">
           <div className="flex items-center justify-between md:justify-between">
             <h1 className="md:text-2xl md:py-1 py-5 text-lg  font-bold  md:mb-0">
@@ -78,6 +79,7 @@ function TrackOrder() {
           </div>
         )}
       </div>
+      <ButtonGroup />
     </>
   );
 }
