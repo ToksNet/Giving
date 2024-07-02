@@ -208,7 +208,7 @@ function Product() {
             </div>
           </div>
 
-          <div className="md:mt-10 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-28 ">
+          <div className="md:mt-4 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-28 ">
             <div className="flex flex-col md:flex-row gap-6 md:gap-9 w-full md:w-[70%]">
               <div className="bg-[#d6f5ff] px-5 pt-12 mt-2 py-3 rounded-lg w-full">
                 <div className="flex items-center justify-between">
@@ -217,7 +217,7 @@ function Product() {
                     <HiCurrencyDollar className="w-6 h-6 text-[#DB4444]"/>
                   </div>
                 </div>
-                <div className="mt-">
+                <div className="mt-2">
                   <p className="text-xs text-gray-500">Total Inventory Value</p>
                 </div>
               </div>
@@ -268,9 +268,9 @@ function Product() {
             <div className="h-[450px] overflow-y-auto no-scrollbar">
                 {products.map((product, index) => (
                   <div key={index} className="grid grid-cols-3 md:grid-cols-6 items-center gap-12 md:gap-16 border-b-[1px] py-2">
-                  <div className="font-bold text-xs flex items-center gap-2">
-                    <img src={product.img} alt="Boot" className=""/>
-                    <p className="">{product.name}</p>
+                  <div className="font-bold  flex items-center gap-2">
+                    <img src={product.img} alt="Boot" className="w-5 h-5 md:w-9 md:h-9"/>
+                    <p className="text-xs">{product.name}</p>
                   </div>
                   <p className="text-xs">{product.collect}</p>
                   <p className="text-xs">{product.variation}</p>

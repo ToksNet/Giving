@@ -22,6 +22,7 @@ import Delivered from "./components/Sellers/delivered";
 import Pending from "./components/Sellers/pending";
 import Cancelled from "./components/Sellers/cancelled";
 import ProductProvider from "./components/Sellers/ProductContext";
+import Transactions from "./pages/Sellers/Transactions";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,6 +42,7 @@ const router = createBrowserRouter(
         <Route path="dashboard" element={<SellersDashboard />} />
         <Route path="track" element={<TrackOrder />} />
         <Route path="product" element={<Product />} />
+        <Route path="transaction" element={<Transactions />} />
 
         <Route path="orders" element={<Orders />} />
         <Route path="delivered" element={<Delivered />} />

@@ -7,14 +7,14 @@ const SellersPageNav = () => {
     { name: "Dashboard", path: "/sellers/dashboard" },
     { name: "Track Orders", path: "/sellers/track" },
     { name: "Products", path: "/sellers/product" },
-    { name: "Transaction", path: "/transaction" },
+    { name: "Transaction", path: "/sellers/transaction" },
     { name: "Store Analytics", path: "/store-analytics" },
     { name: "Profile", path: "/profile" },
   ];
 
   return (
     <div className="w-full items-center">
-      <div className="hidden mx-40 lg:flex mt-40  justify-between bg-[#FBECEC] w-[894px] h-[56px] rounded-md shadow-md p-2">
+      <div className="hidden mx-40 lg:flex mt-48  justify-between bg-[#FBECEC] w-[894px] h-[56px] rounded-md shadow-md p-2">
         {navItems.map((item) => (
           <NavLink
             key={item.name}
