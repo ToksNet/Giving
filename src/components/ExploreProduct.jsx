@@ -40,7 +40,7 @@ const ProductCard = ({
       </div>
       <Link to="/product-details">
       <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        Add to Cart
+        Add to Cart explore
       </div>
       </Link>
     </div>

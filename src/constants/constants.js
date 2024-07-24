@@ -79,19 +79,6 @@ export const categoryImages= [
           ],
       },
       {
-        id: 3,
-        image: prodimg8,
-        prodName: "S-Series Comfort Chair",
-        price:400,
-        discountPrice:375,
-        reviewsNo:99,
-        starsNo:5,
-        discountRate:25,
-        newProd:false,
-        availColors: [
-          ],
-      },
-      {
         id: 4,
         image: prodimg8,
         prodName: "S-Series Comfort Chair",
@@ -105,7 +92,20 @@ export const categoryImages= [
           ],
       },
       {
-        id: 1,
+        id: 5,
+        image: prodimg8,
+        prodName: "S-Series Comfort Chair",
+        price:400,
+        discountPrice:375,
+        reviewsNo:99,
+        starsNo:5,
+        discountRate:25,
+        newProd:false,
+        availColors: [
+          ],
+      },
+      {
+        id: 6,
         image: prodimg5,
         prodName: "HAVIT HV-G92 Gamepad",
         price:160,
@@ -121,7 +121,7 @@ export const categoryImages= [
         ],
       },
       {
-        id: 2,
+        id: 7,
         image: prodimg7,
         prodName: "AK-900 Wired Keyboard",
         price:1160,
@@ -134,7 +134,7 @@ export const categoryImages= [
           ],
       },
       {
-        id: 3,
+        id: 8,
         image: prodimg2,
         prodName: "IPS LCD Gaming Monitor",
         price:400,
@@ -147,7 +147,7 @@ export const categoryImages= [
           ],
       },
       {
-        id: 3,
+        id: 9,
         image: prodimg8,
         prodName: "S-Series Comfort Chair",
         price:400,
@@ -160,7 +160,7 @@ export const categoryImages= [
           ],
       },
       {
-        id: 4,
+        id: 10,
         image: prodimg8,
         prodName: "S-Series Comfort Chair",
         price:400,
