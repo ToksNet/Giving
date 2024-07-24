@@ -2,19 +2,22 @@ import React, { useState } from "react";
 import { Prod1 } from "../../constants/constants";
 import Star from "../Star";
 import { FaHeart } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const FullProductCard = () => {
   const [selectedColor, setSelectedColor] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
   const [favourite, setFavourite] = useState(false);
+  
   const [count, setCount] = useState(5); // Initial state set to 5
+  const location = useLocation();
+  const { imageSrc, title,price, rating, reviews } = location.state;
 
   const {
     id,
     image,
     otherImages,
     prodName,
-    price,
     discountPrice,
     reviewsNo,
     starsNo,
@@ -41,20 +44,17 @@ const FullProductCard = () => {
     <div className="md:max-h-screen  md:flex gap-6 justify-center ">
       <div className="flex flex-col-reverse md:flex-row gap-2 ">
         <div className="flex gap-2 md:block basis-[25%] space-y-4">
-          {otherImages.map((image, index) => (
-            <div
-              key={index}
-              className="bg-slate-200 p-4 w-30 md:max-w-[200px] rounded-md">
-              <img src={image} alt="" className="mx-auto object-fit" />
-            </div>
-          ))}
+            <img src={imageSrc} alt={title} className="w-full " />
+            <img src={imageSrc} alt={title} className="w-full " />
+            <img src={imageSrc} alt={title} className="w-full " />
+            <img src={imageSrc} alt={title} className="w-full " />
         </div>
-        <div className=" bg-slate-200 flex items-center rounded-md p-9">
-          <img src={image} alt="" srcset="" className=" mx-auto" />
+        <div className=" bg-slate-200 w-[400px] flex items-center rounded-md p-9">
+          <img src={imageSrc} alt={title} className="w-full" />
         </div>
       </div>
       <div className="mt-6 md:mt-0 space-y-4 basis-[25%]">
-        <h2 className="font-bold">{prodName} </h2>
+      <h1 className="text-2xl font-bold mt-4">{title}</h1>
         <div className="flex gap-2 items-center">
           <Star starsNo={starsNo} />
           <span className="text-sm text-gray-500">
@@ -65,8 +65,8 @@ const FullProductCard = () => {
             {instock ? "In stock" : "Out of stock"}
           </span>
         </div>
-        <h2 className="font-semibold ">${discountPrice}</h2>
-        <div className="text-bold font-medium text-sm">{shortDescription}</div>
+        <h2 className="font-semibold ">${discountPrice}</h2> 
+         <div className="text-bold font-medium text-sm">{shortDescription}</div>
 
         <hr className="border-gray-400" />
 
@@ -94,11 +94,11 @@ const FullProductCard = () => {
                 </span>
               </label>
             ))}
-          </div>
+          </div> 
         </div>
         <div className="flex items-center gap-2">
           <p className="font-semibold">Sizes:</p>
-          {availSizes.map((size) => (
+           {availSizes.map((size) => (
             <span
               key={size.id}
               onClick={() => setSelectedSize(size.id)}
@@ -110,7 +110,7 @@ const FullProductCard = () => {
               style={{ cursor: "pointer" }}>
               {size.name}
             </span>
-          ))}
+          ))} 
         </div>
         <div className="flex gap-2">
           <div className="flex">
@@ -150,7 +150,7 @@ const FullProductCard = () => {
                 stroke-linejoin="round"
               />
             </svg>
-          </button>
+          </button> 
         </div>
         <div>
           <div className="border border-gray-300 p-4 rounded-t-sm">

@@ -21,7 +21,7 @@ const Home = () => {
       <Hero />
       <div className="">
         <Header />
-        <Categories />
+         <Categories />
         <TodayProduct />
         <TimerBanner />
         <NewAdvert />
@@ -29,10 +29,15 @@ const Home = () => {
         <ExploreProduct1 />
         <NewAdvert />
         <NewArrival />
+
         <BeautySales />
+
         <ExploreProduct />
-        <Advert />
-        <CustomerService />
+
+        <NewAdvert />
+
+
+        <CustomerService /> 
       </div>
     </>
   );
