@@ -10,6 +10,7 @@ import {
 import { PiUserCircleFill } from "react-icons/pi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { MdClose, MdMail } from "react-icons/md";
 
 const NavBar = () => {
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
@@ -21,7 +22,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="fixed top-[47px] w-full h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center pr-4 md:px-4 bg-white z-50">
+    <div className="fixed md:top-[47px] w-full md:h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center pr-4 md:px-4 bg-white z-50">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
         <div className="flex md:pl-4 pl-0 items-center">
@@ -120,7 +121,7 @@ const NavBar = () => {
                 </div>
               </div>
               <div className="flex flex-col h-[85%] justify-between items-center">
-                <div className="flex flex-col pr-3 pt-14">
+                <div className="flex h-screen flex-col pr-3 pt-14">
                   <a href="#" className="flex gap-11 items-center mb-[10px]">
                     <span>Women's Fashion</span>
                     <FaAngleRight className="w-4 h-4" />
@@ -151,6 +152,7 @@ const NavBar = () => {
                     Health & Beauty
                   </a>
                 </div>
+                
                 <div className="mt-28">
                   <div className="flex flex-col items-center">
                     <button className="bg-[#EA4335] text-white py-3 text-xs px-7 font-medium">
@@ -181,37 +183,60 @@ const NavBar = () => {
 
       {/* Mobile Dropdown Menu */}
       {dropdownOpen && (
-        <div className="absolute top-[93px] right-0 mt-2 w-full bg-white text-black rounded-md shadow-lg z-50">
-          <div className="border-r-[1px] flex flex-col border-[#D4B4B4] p-4">
-            <Link to="/home" className="flex gap-11 items-center mb-[10px]">
-              <span>Women's Fashion</span>
-              <FaAngleRight className="w-4 h-4" />
-            </Link>
-            <Link to="/home" className="flex gap-11 items-center mb-[10px]">
-              <span>Men's Fashion</span>
-              <FaAngleRight className="w-4 h-4" />
-            </Link>
-            <Link to="/home" className="mb-[9px]">
-              Electronics
-            </Link>
-            <Link to="/home" className="mb-[9px]">
-              Home & Lifestyle
-            </Link>
-            <Link to="/home" className="mb-[9px]">
-              Medicine
-            </Link>
-            <Link to="/home" className="mb-[9px]">
-              Sport & Outdoor
-            </Link>
-            <Link to="/home" className="mb-[9px]">
-              Baby's & Toy
-            </Link>
-            <Link to="/home" className="mb-[9px]">
-              Groceries & Pets
-            </Link>
-            <Link to="/home" className="mb-[9px]">
-              Health & Beauty
-            </Link>
+        <div className="absolute right-0 pt-[160px] w-[90%] h-fit bg-white text-black rounded-md shadow-lg z-50">
+
+          <div className="mb-10">
+            <div className="bg-[#e94335] flex items-center justify-between pr-4">
+              <div>
+                <img src="./images/GV3N-LogoWhite.png" className="w-20" alt="" />
+              </div>
+              <div className="" onClick={toggleDropdown}>
+               <MdClose className="text-3xl text-white" />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-between">
+            <div className="md:border-r-[1px] pl-16 pr-20 flex flex-col border-[#D4B4B4] p-4">
+              <Link to="/home" className="flex justify-between items-center mb-[10px]">
+                <span>Women's Fashion</span>
+                <FaAngleRight className="w-4 h-4" />
+              </Link>
+              <Link to="/home" className="flex justify-between items-center mb-[10px]">
+                <span>Men's Fashion</span>
+                <FaAngleRight className="w-4 h-4" />
+              </Link>
+              <Link to="/home" className="mb-[9px]">
+                Electronics
+              </Link>
+              <Link to="/home" className="mb-[9px]">
+                Home & Lifestyle
+              </Link>
+              <Link to="/home" className="mb-[9px]">
+                Medicine
+              </Link>
+              <Link to="/home" className="mb-[9px]">
+                Sport & Outdoor
+              </Link>
+              <Link to="/home" className="mb-[9px]">
+                Baby's & Toy
+              </Link>
+              <Link to="/home" className="mb-[9px]">
+                Groceries & Pets
+              </Link>
+              <Link to="/home" className="mb-[9px]">
+                Health & Beauty
+              </Link>
+            </div>
+
+            <div className="text-center mt-[30px]">
+              <button className="bg-[#e94335] text-white py-2 px-4">Submit a ticket</button>
+
+              <div className="flex gap-[4.42px] justify-center mt-5 items-center">
+                <MdMail className="w-[26.52px] h-[26.52]"/>
+                <a href="#" className="text-black text-[14px] font-semibold">customer.support@gv3n.cc</a>
+              </div>
+            </div>
           </div>
         </div>
       )}
