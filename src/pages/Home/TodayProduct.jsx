@@ -9,7 +9,7 @@ const TodayProduct = () => {
   const initialTime = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
   return (
-    <div className="categories px-4 my-1 md:mx-32">
+    <div className="categories px-4 my-1 md:mx-32 mt-[45px] md:mt-[59px]"> 
       <div className="flex items-center gap-3">
         <div className="bg-primary w-4 h-7 rounded"></div>
         <h2 className="font-semibold md:text-[16px] text-primary">Today’s</h2>
@@ -62,7 +62,7 @@ const TodayProduct = () => {
           </button>
         </div>
       </div>
-      <div className="mt-10 flex items-center overflow-x-auto space-x-4 product-scroll">
+      <div className="mt-10 flex items-center overflow-x-auto space-x-4 product-scroll justify-center">
         {todayProducts.map((product) => (
           <div
             key={product.id}
@@ -76,7 +76,8 @@ const TodayProduct = () => {
       <div className="md:hidden">
         <a
           href="#"
-          className="bg-red-500 p-4 text-white font-medium text-lg mx-auto rounded text-center block w-48"
+          className="bg-[#DB4444] px-12 py-4 text-white font-medium text-lg mx-auto rounded text-center
+          block w-fit"
         >
           View All Products
         </a>
