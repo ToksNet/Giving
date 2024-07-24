@@ -1,8 +1,11 @@
 import React from "react";
 import { prod4 } from "../../assets/images";
 import Tabs from "../../components/ProductDescripComponents/TabComponent";
+import { useLocation } from "react-router-dom";
 
 const ProductDescription = () => {
+  const location = useLocation();
+  const { imageSrc, title,price, rating, reviews } = location.state;
   const tabs = [
     {
       label: "Overview",
@@ -130,7 +133,8 @@ const ProductDescription = () => {
 
         <div className="md:flex gap-5 mt-10 md:mt-20">
           <div className="p-2 bg-gray-200 w-full flex justify-center items-center rounded-md">
-            <img src={prod4} alt="" className="w-[10rem]" />
+          <img src={imageSrc} alt={title} className="w-full " />
+            
           </div>
           <div className="space-y-5 ">
             <h2 className="mt-10 md:mt-0 text-primary font-bold">

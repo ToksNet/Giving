@@ -8,6 +8,7 @@
   padding: 0;
 }
 
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -54,6 +55,7 @@ code {
   bottom: 0rem;
   left: -5.1rem !important;
   width: inherit;
+  top: 260px !important;
 }
 
 .slick-dots li button::before {
@@ -78,9 +80,34 @@ code {
   border-radius: 50%;
 }
 
+
+.css-zjf1nq-MuiPaper-root{
+  display: none !important;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root{
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #000000 !important;
+  padding: 0px 7px !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  text-transform: capitalize !important;
+}
+
+.slick-next, .slick-prev{
+  display: none !important;
+}
+/* .slick-initialized .slick-slide {
+width: 195px !important;
+} */
 @media screen and (max-width: 767px) {
   .slick-dots {
     width: 100%;
     left: 0 !important;
+    top: 205px !important;
   }
+
+/* .slick-initialized .slick-slide {
+width: 343px !important;
+} */
 }

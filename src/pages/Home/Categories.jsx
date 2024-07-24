@@ -55,8 +55,8 @@ const Categories = () => {
   };
 
   return (
-    <div className="mt-28 mx-4 md:mt-32 md:mx-32">
-      <div className="categories mx-auto my-10 w-full md:px-4">
+    <div className="mt-[57px] px-4 md:mt-32 md:px-32">
+      <div className="categories mx-auto  w-full md:px-4">
         <div className="flex items-center gap-3">
           <div className="bg-primary w-4 h-7 rounded"></div>
           <h2 className="font-semibold md:text-[16px] text-primary">
@@ -110,15 +110,17 @@ const Categories = () => {
             </button>
           </div>
         </div>
-        <div className="mt-10">
+       <div className="w-full flex justify-center">
+       <div className="mt-10 w-full max-w-full md:w-[1170px]">
           <Slider {...settings} ref={sliderRef}>
             {categoryImages.map((category) => (
-              <div key={category.id} className="px-[5px] w-full">
+              <div key={category.id} className="">
                 <CategoryCard image={category.image} name={category.name} />
               </div>
             ))}
           </Slider>
         </div>
+       </div>
       </div>
     </div>
   );
