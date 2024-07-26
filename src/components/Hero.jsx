@@ -32,7 +32,8 @@ const Hero = () => {
               <FaAngleRight className="w-4 h-4" />
             </a>
             <a href="#" className="flex gap-11 items-center mb-[10px]">
-              <span>Women's Fashion</span> <FaAngleRight className="w-4 h-4" />
+              <span>Women's Fashion</span>
+              <FaAngleRight className="w-4 h-4" />
             </a>
             <a href="#" className="mb-[9px]">
               Electronics
