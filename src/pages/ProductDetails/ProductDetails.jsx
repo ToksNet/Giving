@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import FullProductCard from '../../components/ProductDescripComponents/FullProductCard';
-import ProductDescription from './ProductDescription';
-import RelatedItems from './RelatedItems';
+// import FullProductCard from '../../components/ProductDescripComponents/FullProductCard';
+// import ProductDescription from './ProductDescription';
+// import RelatedItems from './RelatedItems';
 // import React, { useState } from "react";
 import { Prod1 } from "../../constants/constants";
 import Star from '../../components/Star';
@@ -490,7 +490,7 @@ const ProductDetails = () => {
             ))}
           </div>
         </div>
-    </div>
+      </div>
     </div>
   )
 }
