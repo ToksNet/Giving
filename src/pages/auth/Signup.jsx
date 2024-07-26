@@ -28,7 +28,7 @@ const Signup = () => {
     <div className='w-full flex flex-col justify-center items-center px-4 md:px-0'>
       <div className='md:flex gap-[30px] mt-4 lg:mt-0'>
         <button className='px-[30px] w-full md:w-fit py-4 rounded bg-[#DB4444] text-base font-medium text-[#FFFFFF]'>Buyer’s Account</button>
-        <button className='mt-4 md:mt-0 w-full md:w-fit px-[30px] py-4 rounded bg-[white]  border border-[#FB1314] text-base font-medium text-[#000000]'>Seller’s Account</button>
+        <button className='mt-4 md:mt-0 w-full md:w-fit px-[30px] py-4 rounded bg-[white]  border border-[#FB1314] text-base font-medium text-[#000000]'>Seller’s Account is now changed for testing testing</button>
       </div>
       <div className='w-full max-w-full md:w-[409px]'>
         <div className='mt-[36px] md:mt-[69px] w-full text-left'>
