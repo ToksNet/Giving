@@ -1,9 +1,15 @@
 import React from "react";
 
 const HeaderNavigation = () => (
-  <div className="text-sm mt-60 font-semibold mb-10 ml-20">
+  <div className="text-[#808080] px-4 md:px-0  mt-[190px] text-[14px] font-[Poppins] font-semibold mb-10 ml-20">
     <span>Account</span> / <span>Product</span> / <span>View Cart</span>
   </div>
+
+  // <div className='text-[#808080] px-4 md:px-0  mt-[35px] text-[14px] font-[Poppins] '>
+  //       <span className='text-[14px] text-[#808080] font-[400]'>Account </span> / <span className='text-[14px] text-[#808080] font-[400]'>Gamming </span> / <span className='text-[#000000] font-[400] text'> Havic HV G-92 Gamepad</span>
+  //     </div>
+
+  
 );
 
 const ProductDetailsHeader = () => (
@@ -78,7 +84,7 @@ const CouponAndCostDetails = ({ subtotal, shipping, total, applyCoupon }) => (
       <input
         type="text"
         placeholder="Coupon Code"
-        className="border p-2 mb-2 w-[300px] border-[2px] rounded"
+        className="border p-2 mb-2 w-[300px] rounded"
       />
       <button
         onClick={applyCoupon}
