@@ -32,7 +32,7 @@ const Signup = () => {
       </div>
       <div className='w-full max-w-full md:w-[409px]'>
         <div className='mt-[36px] md:mt-[69px] w-full text-left'>
-          <h1 className='font-medium text-[38px] text-[#000000]'>Create an account</h1>
+          <h1 className='font-medium text-[38px] text-[#000000]'>Create an account also this is also to test that i want</h1>
           <p className='font-normal text-base text-[#000000] mt-6'>Enter your details below</p>
         </div>
         <div className='mt-12 w-full md:w-[409px]'>
