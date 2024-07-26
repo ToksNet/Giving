@@ -19,7 +19,7 @@ const Footer = () => {
             Gv3n market place
           </h3>
           <p className="mb-3">Subscribe</p>
-          <p style={{ fontSize: "12px" }}>Get 10% off your first order</p>
+          <p style={{ fontSize: "13px" }}>Get 10% off your first order</p>
           <form className="mt-3 flex items-center">
             <div className="relative">
               <input
@@ -174,6 +174,7 @@ const Footer = () => {
         </p>
       </div>
     </footer>
+    // <div></div>
   );
 };
 
