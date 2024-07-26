@@ -2,7 +2,7 @@ import React from "react";
 
 const CategoryCard = ({ image, name }) => {
   return (
-    <div className="w-full md:w-[170px] h-[145px] relative shadow-s shadow-slate-500">
+    <div className=" w-[96%] md:w-[150px] h-[145px] relative shadow-s shadow-slate-500 ml-10" >
       <img
         src={image}
         alt={name}

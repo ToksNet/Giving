@@ -12,9 +12,7 @@ const MainLayout = () => {
       <div className="flex flex-col min-h-screen">
         <SaleBanner />
         <NavBar />
-        
         <Outlet />
-
         <Footer />
       </div>
     </>

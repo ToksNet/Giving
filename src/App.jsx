@@ -2,12 +2,13 @@ import React from "react";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
 import SellersLayout from "./layouts/SellersLayout";
-import Home from "./pages/Home/Home";
+import Index from "./pages/Home/Index";
 import Signin from "./pages/auth/Signin";
 import Signup from "./pages/auth/Signup";
 import SellersReg from "./pages/auth/SellersReg";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
-import AppCart from "./pages/ProductDetails/AppCart";
+import Cart from "./pages/Home/Cart";
+
 import {
   Route,
   createBrowserRouter,
@@ -28,22 +29,21 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       {" "}
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home />} />
-        <Route path="product-details" element={<ProductDetails />} />
-        <Route path="cart" element={<AppCart />} />
-      </Route>
-      <Route path="auth" element={<AuthLayout />}>
+        <Route path="/" element={<MainLayout />} >
+        <Route index element={<Index />} />
+        <Route path="product-details/:id" element={<ProductDetails />} />
+        <Route path="cart" element={<Cart />} />
+        </Route>
+        <Route path="auth" element={<AuthLayout />}>
         <Route path="Signin" element={<Signin />} />
         <Route path="Signup" element={<Signup />} />
         <Route path="Sellers" element={<SellersReg />} />
-      </Route>
-      <Route path="sellers" element={<SellersLayout />}>
+        </Route>
+        <Route path="sellers" element={<SellersLayout />}>
         <Route path="dashboard" element={<SellersDashboard />} />
         <Route path="track" element={<TrackOrder />} />
         <Route path="product" element={<Product />} />
         <Route path="transaction" element={<Transactions />} />
-
         <Route path="orders" element={<Orders />} />
         <Route path="delivered" element={<Delivered />} />
         <Route path="pending" element={<Pending />} />

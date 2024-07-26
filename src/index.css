@@ -18,6 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -97,17 +98,23 @@ code {
 .slick-next, .slick-prev{
   display: none !important;
 }
-/* .slick-initialized .slick-slide {
-width: 195px !important;
-} */
+#slider .slick-initialized .slick-slide{
+  margin-left: 12px !important;
+}
+.slick-slide {
+float: left !important;
+}
+.signup-button{
+  background: #DB4444 !important;
+  padding: 16px 48px !important;
+  font-size: 16px !important;
+  color: #FFFFFF !important;
+}
 @media screen and (max-width: 767px) {
   .slick-dots {
     width: 100%;
     left: 0 !important;
     top: 205px !important;
   }
-
-/* .slick-initialized .slick-slide {
-width: 343px !important;
-} */
+   
 }
