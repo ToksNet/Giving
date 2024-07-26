@@ -6,39 +6,40 @@ import { AiFillApple } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    // <footer className="bg-black mt-24 text-white py-10">
-    //   <div className="container mx-auto flex flex-col md:flex-row md:flex-wrap items-start ml-4 md:justify-between px-3 md:px-10">
-    //     {/* 1st Column */}
-    //     <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
-    //       <h3
-    //         className="font-bold mb-3"
-    //         style={{
-    //           fontSize: "20px",
-    //         }}
-    //       >
-    //         Gv3n market place
-    //       </h3>
-    //       <p className="mb-3">Subscribe</p>
-    //       <p style={{ fontSize: "12px" }}>Get 10% off your first order</p>
-    //       <form className="mt-3 flex items-center">
-    //         <div className="relative">
-    //           <input
-    //             type="email"
-    //             placeholder="Enter your email "
-    //             className="p-2 pr-10 rounded-l-md bg-black text-white border border-white focus:ring-2 focus:ring-indigo-500"
-    //             style={{
-    //               width: "9.5rem",
-    //               fontSize: "0.85rem",
-    //               borderRadius: "0.3rem",
-    //               borderWidth: "1.5px",
-    //             }}
-    //           />
-    //           <button>
-    //             <CiPaperplane className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white" />
-    //           </button>
-    //         </div>
-    //       </form>
-    //     </div>
+
+    <footer className="bg-black mt-24 text-white py-10">
+      <div className="container mx-auto flex flex-col md:flex-row md:flex-wrap items-start ml-4 md:justify-between px-3 md:px-10">
+        {/* 1st Column */}
+        <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
+          <h3
+            className="font-bold mb-3"
+            style={{
+              fontSize: "20px",
+            }}
+          >
+            Gv3n market place
+          </h3>
+          <p className="mb-3">Subscribe</p>
+          <p style={{ fontSize: "13px" }}>Get 10% off your first order</p>
+          <form className="mt-3 flex items-center">
+            <div className="relative">
+              <input
+                type="email"
+                placeholder="Enter your email "
+                className="p-2 pr-10 rounded-l-md bg-black text-white border border-white focus:ring-2 focus:ring-indigo-500"
+                style={{
+                  width: "9.5rem",
+                  fontSize: "0.85rem",
+                  borderRadius: "0.3rem",
+                  borderWidth: "1.5px",
+                }}
+              />
+              <button>
+                <CiPaperplane className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white" />
+              </button>
+            </div>
+          </form>
+        </div>
 
     //     {/* 2nd Column */}
     //     <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
@@ -132,49 +133,50 @@ const Footer = () => {
     //             </div>
     //           </div>
 
-    //           <div
-    //             className="flex items-center space-x-1 border p-1 rounded-md bg-black border-white text-white"
-    //             style={{ height: "36px", width: "40" }}
-    //           >
-    //             <AiFillApple className="w-5 h-5" />
-    //             <div className="text-sm">
-    //               <p
-    //                 className="text-xs mb-0"
-    //                 style={{
-    //                   fontSize: "6px",
-    //                 }}
-    //               >
-    //                 Download on the
-    //               </p>
-    //               <p
-    //                 className="font-bold"
-    //                 style={{
-    //                   fontSize: "10px",
-    //                 }}
-    //               >
-    //                 App Store
-    //               </p>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //       <div className="flex space-x-3 mt-4">
-    //         <RiFacebookLine className="w-6 h-6 cursor-pointer" />
-    //         <RiTwitterLine className="w-6 h-6 cursor-pointer" />
-    //         <FaInstagram className="w-6 h-6 cursor-pointer" />
-    //         <RiLinkedinLine className="w-6 h-6 cursor-pointer" />
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <div className="text-center mt-10 flex items-center justify-center">
-    //     <span className="mr-2">&copy;</span>
-    //     <p className="inline-block">
-    //       {" "}
-    //       Copyright GV3N 2024. All rights reserved.
-    //     </p>
-    //   </div>
-    // </footer>
-    <></>
+
+              <div
+                className="flex items-center space-x-1 border p-1 rounded-md bg-black border-white text-white"
+                style={{ height: "36px", width: "40" }}
+              >
+                <AiFillApple className="w-5 h-5" />
+                <div className="text-sm">
+                  <p
+                    className="text-xs mb-0"
+                    style={{
+                      fontSize: "6px",
+                    }}
+                  >
+                    Download on the
+                  </p>
+                  <p
+                    className="font-bold"
+                    style={{
+                      fontSize: "10px",
+                    }}
+                  >
+                    App Store
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex space-x-3 mt-4">
+            <RiFacebookLine className="w-6 h-6 cursor-pointer" />
+            <RiTwitterLine className="w-6 h-6 cursor-pointer" />
+            <FaInstagram className="w-6 h-6 cursor-pointer" />
+            <RiLinkedinLine className="w-6 h-6 cursor-pointer" />
+          </div>
+        </div>
+      </div>
+      <div className="text-center mt-10 flex items-center justify-center">
+        <span className="mr-2">&copy;</span>
+        <p className="inline-block">
+          {" "}
+          Copyright GV3N 2024. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    // <div></div>
   );
 };
 
