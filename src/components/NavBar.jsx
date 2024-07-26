@@ -44,7 +44,11 @@ const NavBar = () => {
             <div className="w-6 h-6 relative">
               <img src={shopping} className="w-full h-full" alt="Shopping" />
             </div>
-            <p className="absolute bg-[grey] p-[2px] rounded-3xl w-fit max-w-full flex justify-center text-[12px] font-bold top-[25px] ml-[-8px] text-white ">{cartItems.length}</p>
+            {cartItems.length > 0 && (
+                <p className="absolute bg-[#DB4444] p-[2px] rounded-3xl w-fit max-w-full flex justify-center text-[12px] font-bold top-[25px] ml-[-8px] text-white">
+                  {cartItems.length}
+                </p>
+              )}
 
             <p className="text-[12px] font-normal text-[#000000]">Cart</p>
           </div>

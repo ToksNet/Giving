@@ -49,7 +49,7 @@ const Signin = () => {
         )}
       </Formik>
       <div className='w-full self-end mt-[34px]'>
-        <p className='text-base font-normal text-[#000000] text-center'>Dont have an account?<span className='ml-2'><Link to="/auth/Signup" >Sign Up</Link></span></p>
+        <p className='text-base font-normal text-[#000000] text-center'>Dont have an account?<span className='ml-2 border-b border-b-[black]'><Link to="/auth/Signup" >Sign Up</Link></span></p>
       </div>
       </div>
       

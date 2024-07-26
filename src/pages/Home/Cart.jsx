@@ -27,7 +27,7 @@ const Cart = () => {
       <div>
         <table className="w-full">
           <thead className="bg-[#DB4444] ">
-          
+
             <tr >
               <th className="text-left pl-4 md:pl-10 lg:pl-[102px]  py-6 font-boold text-base lg:text-lg text-[#FFFFFF]">PRODUCT DETAILS</th>
               <th className="text-left  py-2 px-2 font-booldtext-base lg:text-lg text-[#FFFFFF] hidden md:table-cell">PRICE</th>
@@ -38,98 +38,110 @@ const Cart = () => {
             </tr>
           </thead>
           <tbody>
-          {cartItems.length === 0 ? (
-            <tr>
-              <td colSpan="6" className="text-center py-6">Your cart is empty</td>
-            </tr>
-          ) : (
-            cartItems.map((item) => (
-              <React.Fragment key={item.id}>
+            {cartItems.length === 0 ? (
               <tr>
-                <td className="hidden md:table-cell pl-4 md:pl-10 lg:pl-[102px]  pr-6 py-[36px]">
-                  <div className="flex items-center gap-7">
-                    <div className="w-[120px]">
-                      <img src={item.imageSrc} alt={item.title} className="w-full"/>
-                    </div>
-                    <div>
-                      <p className="text-base font-medium text-[#000000]">{item.title}</p>
-                      <p className="text-[#000000] font-normal text-sm mt-4">Color: <span className="font-bold ml-2">{item.color}</span></p>
-                      <p className="text-[#000000] font-normal text-sm mt-4">Size: <span className="ml-2">{item.size}</span></p>
-                    </div>
-                  </div>
-                </td>
-                <td className="hidden md:table-cell px-6 py-[36px] font-medium text-base text-[#000000]">{item.price}</td>
-                <td className="hidden md:table-cell px-6 py-[36px]">
-                  <div className="flex items-center justify-center rounded-xl bg-[#F6F6F6] px-[23px] py-[11px] gap-4 text-base font-medium text-[#595959] w-fit">
-                    <button
-                      className=""
-                      onClick={() => handleDecrement(item.id)}
-                    >
-                      -
-                    </button>
-                    <p>{item.quantity}</p>
-                    <button
-                      className=""
-                      onClick={() => handleIncrement(item.id)}
-                    >
-                      +
-                    </button>
-                  </div>
-                </td>
-                <td className="hidden md:table-cell px-6 py-[36px]">FREE</td>
-                <td className="hidden md:table-cell px-6 py-[36px] text-base font-medium text-[#000000]">{item.price * item.quantity}</td>
-                <td className="hidden md:table-cell pr-[102px] py-[36px] text-center text-[#DB4444] cursor-pointer">
-                  <DeleteIcon onClick={() => handleRemove(item.id)} />
-                </td>
+                <td colSpan="6" className="text-center py-6">Your cart is empty</td>
               </tr>
+            ) : (
+              cartItems.map((item) => (
+                <React.Fragment key={item.id}>
+                  <tr>
+                    <td className="hidden md:table-cell pl-4 md:pl-10 lg:pl-[102px]  pr-6 py-[36px]">
+                      <div className="flex items-center gap-7">
+                        <div className="w-[120px]">
+                          <img src={item.imageSrc} alt={item.title} className="w-full" />
+                        </div>
+                        <div>
+                          <p className="text-base font-medium text-[#000000]">{item.title}</p>
+                          <p className="text-[#000000] font-normal text-sm mt-4">Color: <span className="font-bold ml-2">{item.color}</span></p>
+                          <p className="text-[#000000] font-normal text-sm mt-4">Size: <span className="ml-2">{item.size}</span></p>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="hidden md:table-cell px-6 py-[36px] font-medium text-base text-[#000000]">{item.price}</td>
+                    <td className="hidden md:table-cell px-6 py-[36px]">
+                      <div className="flex items-center justify-center rounded-xl bg-[#F6F6F6] px-[23px] py-[11px] gap-4 text-base font-medium text-[#595959] w-fit">
+                        <button
+                          className=""
+                          onClick={() => handleDecrement(item.id)}
+                        >
+                          -
+                        </button>
+                        <p>{item.quantity}</p>
+                        <button
+                          className=""
+                          onClick={() => handleIncrement(item.id)}
+                        >
+                          +
+                        </button>
+                      </div>
+                    </td>
+                    <td className="hidden md:table-cell px-6 py-[36px]">FREE</td>
+                    <td className="hidden md:table-cell px-6 py-[36px] text-base font-medium text-[#000000]">{item.price * item.quantity}</td>
+                    <td className="hidden md:table-cell pr-[102px] py-[36px] text-center text-[#DB4444] cursor-pointer">
+                      <DeleteIcon onClick={() => handleRemove(item.id)} />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colSpan="6" className="px-[102px] pb-[36px] hidden md:table-cell">
+                      <p className="text-sm font-medium text-[#DB4444]">Brief Description</p>
+                      <p className="text-[#000000] font-normal text-[10px] mt-[3px]">PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
+                      <div className="h-[1px] mt-[30px] bg-[#BEBCBD] px-[102px]"></div>
+                    </td>
+                  </tr>
+                </React.Fragment>
+              ))
+            )}
+            {cartItems.length === 0 ? (
               <tr>
-                <td colSpan="6" className="px-[102px] pb-[36px] hidden md:table-cell">
-                  <p className="text-sm font-medium text-[#DB4444]">Brief Description</p>
-                  <p className="text-[#000000] font-normal text-[10px] mt-[3px]">PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
-                  <div className="h-[1px] mt-[30px] bg-[#BEBCBD] px-[102px]"></div>
-                </td>
+                <td colSpan="6" className="text-center py-6 flex md:hidden">Your cart is empty</td>
               </tr>
-            </React.Fragment>
-           ))
-          )}
-            <tr className="table-cell md:hidden">
-              <td className="p-4">
-                <div className="flex items-center gap-7 ">
-                  <div>
-                    <img src="./images/gamingpad.png" />
-                  </div>
-                  <div>
-                    <p className="text-base font-medium text-[#000000]">Havic HV G-92 Gamepad</p>
-                    <p className="text-[#000000] font-normal text-sm mt-3">Color: <span className="font-bold ml-2">Red</span></p>
-                    <p className="text-[#000000] font-normal text-sm mt-3">Size: <span className="ml-2">Medium</span></p>
-                    <p className="text-base font-bold text-[#000000] mt-3">$192.00</p>
-                    <div className="flex justify-between w-full mt-3">
-                        <div className="flex items-center justify-center   gap-4 text-base font-medium w-fit">
-                  <button
-                    className=""
-                    onClick={handleDecrement}
-                  >
-                    -
-                  </button>
-                  {/* <p>{quantity}</p> */}
-                  <button
-                    className=""
-                    onClick={handleIncrement}
-                  >
-                    +
-                  </button>
-                </div>
-                <div className="md:hidden table-cell  text-right text-[#DB4444] cursor-pointer"><DeleteIcon /></div>
+            ) : (
+              cartItems.map((item) => (
+                <tr className="table-cell md:hidden">
+                  <td className="p-4">
+                    <div className="md:flex items-center gap-7 ">
+                      <div>
+                        <img src={item.imageSrc} alt={item.title} />
+                      </div>
+                      <div>
+                        <p className="text-base font-medium text-[#000000]">{item.title}</p>
+                        <p className="text-[#000000] font-normal text-sm mt-3">Color: <span className="font-bold ml-2">{item.color}</span></p>
+                        <p className="text-[#000000] font-normal text-sm mt-3">Size: <span className="ml-2">{item.size}</span></p>
+                        <p className="text-base font-bold text-[#000000] mt-3">{item.price}</p>
+                        <p className="hidden md:table-cell px-6 py-[36px]">FREE</p>
+                        <p className="hidden md:table-cell px-6 py-[36px] text-base font-medium text-[#000000]">{item.price * item.quantity}</p>
+                        <div className="flex justify-between w-full mt-3">
+                          <div className="flex items-center justify-center   gap-4 text-base font-medium w-fit">
+                            <button
+                              className=""
+                              onClick={() => handleDecrement(item.id)}
+                            >
+                              -
+                            </button>
+                            <p>{item.quantity}</p>
+                            <button
+                              className=""
+                              onClick={() => handleIncrement(item.id)}
+                            >
+                              +
+                            </button>
+                          </div>
+                          <div className="md:hidden table-cell  text-right text-[#DB4444] cursor-pointer">
+                            <DeleteIcon onClick={() => handleRemove(item.id)} />
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div  className="md:hidden table-cell">
-                <p className="text-sm font-medium text-[#DB4444] mt-[27px]">Brief Description</p>
-                <p className="text-[#000000] font-normal text-[10px] mt-[3px]">PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
-                <div className="h-[1px] mt-[30px]  bg-[#BEBCBD] px-[102px]"></div>
-              </div>
-              </td>
-            </tr>
+                    <div className="md:hidden table-cell">
+                      <p className="text-sm font-medium text-[#DB4444] mt-[27px]">Brief Description</p>
+                      <p className="text-[#000000] font-normal text-[10px] mt-[3px]">PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
+                      <div className="h-[1px] mt-[30px]  bg-[#BEBCBD] px-[102px]"></div>
+                    </div>
+                  </td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
 

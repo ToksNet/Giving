@@ -25,17 +25,17 @@ const Signup = () => {
   };
 
   return (
-    <div className='w-full flex flex-col justify-center items-center'>
-      <div className='flex gap-[30px]'>
-        <button className='px-[30px] py-4 rounded bg-[#DB4444] text-base font-medium text-[#FFFFFF]'>Buyer’s Account</button>
-        <button className='px-[30px] py-4 rounded bg-[white]  border border-[#FB1314] text-base font-medium text-[#000000]'>Seller’s Account</button>
+    <div className='w-full flex flex-col justify-center items-center px-4 md:px-0'>
+      <div className='md:flex gap-[30px] mt-4 lg:mt-0'>
+        <button className='px-[30px] w-full md:w-fit py-4 rounded bg-[#DB4444] text-base font-medium text-[#FFFFFF]'>Buyer’s Account</button>
+        <button className='mt-4 md:mt-0 w-full md:w-fit px-[30px] py-4 rounded bg-[white]  border border-[#FB1314] text-base font-medium text-[#000000]'>Seller’s Account</button>
       </div>
-      <div className='w-[409px]'>
-        <div className=' mt-[69px] w-full text-left'>
+      <div className='w-full max-w-full md:w-[409px]'>
+        <div className='mt-[36px] md:mt-[69px] w-full text-left'>
           <h1 className='font-medium text-[38px] text-[#000000]'>Create an account</h1>
           <p className='font-normal text-base text-[#000000] mt-6'>Enter your details below</p>
         </div>
-        <div className='mt-12 w-[409px]'>
+        <div className='mt-12 w-full md:w-[409px]'>
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
@@ -44,17 +44,17 @@ const Signup = () => {
             {() => (
               <Form className='w-full'>
                 <InputField label="Name" type="text" name="name" className="w-full" />
-                <InputField label="Email address" type="email" name="email" className="w-full" id={sata}/>
+                <InputField label="Email address" type="email" name="email" className="w-full" />
                 <InputField label="Password" type="password" name="password" />
                 <div className='mt-10'>
-                  <AuthButton type="submit" className="w-full">Create Account</AuthButton>
+                  <button type="submit" className="w-full signup-button">Create Account</button>
                   <button className='px-[30px] py-4 rounded bg-[white] w-full mt-4 border border-[#00000066] text-base font-medium text-[#000000] flex items-center gap-2 justify-center'><img src={googleicon} alt='googleicon' />Sign up with Google</button>
                 </div>
               </Form>
             )}
           </Formik>
           <div className='w-full self-end mt-[34px]'>
-            <p className='text-base font-normal text-[#000000] text-center'>Already have account?<span className='ml-2'><Link to="/auth/Signin" >Log in</Link></span></p>
+            <p className='text-base font-normal text-[#000000] text-center'>Already have account?<span className='ml-2 border-b border-b-[black]'><Link to="/auth/Signin" >Log in</Link></span></p>
           </div>
         </div>
 
