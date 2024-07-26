@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="flex flex-col group bg-white shadow-md w-full max-w-[220px] h-[350px]">
-      <div className="relative flex items-center justify-center bg-gray-200 rounded-lg overflow-hidden">
+      <div className="relative flex items-center justify-center bg-gray-200 overflow-hidden">
         <img
           className="w-full h-[15rem] object-contain"
           src={image}
@@ -76,7 +76,7 @@ const ProductCard = ({ product }) => {
             />
           </svg>
         </div>
-        <div className="bg-black text-white absolute bottom-0 w-full text-center p-2 rounded-b-md opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
+        <div className="bg-black text-white absolute bottom-0 w-full text-center p-2 opacity-0 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-300">
           Add to Cart
         </div>
       </div>
