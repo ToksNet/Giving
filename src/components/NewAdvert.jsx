@@ -1,18 +1,11 @@
 import React from "react";
-import AdvertCard from "../../components/NewAdvertCard";
+import AdvertCard from "./NewAdvertCard";
 
 const NewAdvert = () => {
   return (
     <div className=" mb-20">
       <div className=" md:mx-32 ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="col-span-1">{/* Content for 'hero' component */}</div>
-          <div className="col-span-1">
-            {/* Content for 'categories' component */}
-          </div>
-          <div className="col-span-1">
-            {/* Content for 'todayproduct' component */}
-          </div>
         </div>
         <div className="mt-8">
           <AdvertCard

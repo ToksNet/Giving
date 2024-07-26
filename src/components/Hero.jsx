@@ -15,7 +15,7 @@ const Hero = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 2000,
     autoplaySpeed: 4000,
     cssEase: "linear",
@@ -26,7 +26,7 @@ const Hero = () => {
     <>
       <div className="mt-32 md:px-24">
         <div className="flex w-full justify-center ">
-          <div className="border-r-[1px] hidden md:flex flex-col border-[#D4B4B4] pr-3 pt-14">
+          <div className="border-r-[1px] hidden md:flex flex-col border-[#D4B4B4] pr-3 pt-14 h-fit">
             <a href="#" className="flex gap-11 items-center mb-[10px]">
               <span>Women's Fashion</span>
               <FaAngleRight className="w-4 h-4" />

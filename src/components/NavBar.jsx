@@ -4,14 +4,14 @@ import Dropdown from "./Dropdown";
 import message from '../assets/images/message-question.png'
 import shopping from '../assets/images/shopping-cart.png'
 import profile from '../assets/images/profile-circle.png'
-import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
+import { useSelector } from "react-redux";
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
+  const cartItems = useSelector(state => state.cart.items);
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -39,14 +39,16 @@ const NavBar = () => {
             </div>
             <Dropdown buttonLabel="Help" menuItems={['Profile', 'My account', 'Logout']} />
           </div>
+          <Link  to="/cart">
           <div className="flex items-center ">
             <div className="w-6 h-6 relative">
               <img src={shopping} className="w-full h-full" alt="Shopping" />
             </div>
-            <p className="absolute bg-[grey] p-[2px] rounded-3xl w-fit max-w-full flex justify-center text-[12px] font-bold top-[25px] ml-[-8px] text-white ">10</p>
+            <p className="absolute bg-[grey] p-[2px] rounded-3xl w-fit max-w-full flex justify-center text-[12px] font-bold top-[25px] ml-[-8px] text-white ">{cartItems.length}</p>
 
             <p className="text-[12px] font-normal text-[#000000]">Cart</p>
           </div>
+          </Link>
         </div>
       </div>
 
