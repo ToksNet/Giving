@@ -1,18 +1,15 @@
 import React from "react";
-
+import SectionHeaders from "./SectionHeaders";
 const AdvertCard = ({ image1, image2, image3, image4 }) => {
   return (
     <div className="flex justify-center">
       <div className="">
         <div className="ml-3 md:ml-0">
-          <div className="flex items-center gap-3">
-            <div className="h-3 bg-red-500 p-4 px-2 rounded-sm"></div>
-            <p className="text-sm font-medium text-red-500">Featured</p>
-          </div>
 
-          <div className="flex items-center mt-5 justify-between">
-            <p className="text-2xl font-medium">New Arrivals</p>
-          </div>
+          <SectionHeaders
+            title="Featured"
+            subtitle="New Arrivals"
+          />
         </div>
 
         <div className="flex flex-col lg:flex-row">
@@ -55,11 +52,11 @@ const AdvertCard = ({ image1, image2, image3, image4 }) => {
 
             <div className="flex flex-row mt-1 gap-2 md:mt-0 md:justify-between">
               <div className="relative w-1/2 md:w-[270px] bg-[#0D0D0D] rounded-md flex items-center mb-4 md:mb-0 md:mr-4 overflow-hidden">
-              <div className="w-full flex justify-center">
-              <div className="w-[190px] ">
-              <img src={image3} alt="Advert 3" className="w-full" />
-              </div>
-              </div>
+                <div className="w-full flex justify-center">
+                  <div className="w-[190px] ">
+                    <img src={image3} alt="Advert 3" className="w-full" />
+                  </div>
+                </div>
                 <div className="absolute bottom-4 pl-6 pb-6  bg-transparent text-white  rounded-md  space-y-2">
                   <p className="text-2xl">Speakers</p>
                   <p className="text-sm">Amazon wireless speakers</p>

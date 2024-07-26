@@ -13,11 +13,9 @@ const OrderList = () => {
     setEntriesToShow(parseInt(event.target.value, 10));
     setCurrentPage(1); // Reset to first page when entries to show change
   };
-
   const indexOfLastEntry = currentPage * entriesToShow;
   const indexOfFirstEntry = indexOfLastEntry - entriesToShow;
   const currentEntries = products.slice(indexOfFirstEntry, indexOfLastEntry);
-
   return (
     <div className="container mx-auto px-4">
       <h2 className="text-2xl font-bold my-4">

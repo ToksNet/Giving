@@ -6,9 +6,14 @@ import { AiFillApple } from "react-icons/ai";
 
 const Footer = () => {
   return (
+<<<<<<< HEAD
+    <footer className="bg-black mt-24 text-white py-10">
+      <div className="container mx-auto flex flex-col md:flex-row md:flex-wrap items-start md:justify-between px-3 md:px-10">
+=======
 
     <footer className="bg-black mt-24 text-white py-10">
       <div className="container mx-auto flex flex-col md:flex-row md:flex-wrap items-start ml-4 md:justify-between px-3 md:px-10">
+>>>>>>> main
         {/* 1st Column */}
         <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
           <h3
@@ -20,7 +25,11 @@ const Footer = () => {
             Gv3n market place
           </h3>
           <p className="mb-3">Subscribe</p>
+<<<<<<< HEAD
+          <p style={{ fontSize: "12px" }}>Get 10% off your first order</p>
+=======
           <p style={{ fontSize: "13px" }}>Get 10% off your first order</p>
+>>>>>>> main
           <form className="mt-3 flex items-center">
             <div className="relative">
               <input
@@ -41,99 +50,102 @@ const Footer = () => {
           </form>
         </div>
 
-    //     {/* 2nd Column */}
-    //     <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
-    //       <h3
-    //         className="mb-3"
-    //         style={{
-    //           fontSize: "18px",
-    //         }}
-    //       >
-    //         Support
-    //       </h3>
-    //       <p className="mb-0 text-sm">111 Bijoy sarani, Dhaka,</p>
-    //       <p className="mb-3 text-sm">DH 1515, Bangladesh.</p>
-    //       <p className="mb-3 text-sm">exclusive@gmail.com</p>
-    //       <p className="mb-3 text-sm">+88015-88888-9999</p>
-    //     </div>
+        {/* 2nd Column */}
+        <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
+          <h3
+            className="mb-3"
+            style={{
+              fontSize: "18px",
+            }}
+          >
+            Support
+          </h3>
+          <p className="mb-0 text-sm">111 Bijoy sarani, Dhaka,</p>
+          <p className="mb-3 text-sm">DH 1515, Bangladesh.</p>
+          <p className="mb-3 text-sm">exclusive@gmail.com</p>
+          <p className="mb-3 text-sm">+88015-88888-9999</p>
+        </div>
 
-    //     {/* 3rd Column */}
-    //     <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
-    //       <h3
-    //         className="mb-3"
-    //         style={{
-    //           fontSize: "18px",
-    //         }}
-    //       >
-    //         Account
-    //       </h3>
-    //       <p className="mb-3 text-sm">My Account</p>
-    //       <p className="mb-3 text-sm">Login/Register</p>
-    //       <p className="mb-3 text-sm">Cart</p>
-    //       <p className="mb-3 text-sm">Wishlist</p>
-    //       <p className="mb-3 text-sm">Shop</p>
-    //     </div>
+        {/* 3rd Column */}
+        <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
+          <h3
+            className="mb-3"
+            style={{
+              fontSize: "18px",
+            }}
+          >
+            Account
+          </h3>
+          <p className="mb-3 text-sm">My Account</p>
+          <p className="mb-3 text-sm">Login/Register</p>
+          <p className="mb-3 text-sm">Cart</p>
+          <p className="mb-3 text-sm">Wishlist</p>
+          <p className="mb-3 text-sm">Shop</p>
+        </div>
 
-    //     {/* 4th Column */}
-    //     <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
-    //       <h3
-    //         className="mb-3"
-    //         style={{
-    //           fontSize: "18px",
-    //         }}
-    //       >
-    //         Quick Link
-    //       </h3>
-    //       <p className="mb-3 text-sm">Privacy Policy</p>
-    //       <p className="mb-3 text-sm">Terms Of Use</p>
-    //       <p className="mb-3 text-sm">FAQ</p>
-    //       <p className="mb-3 text-sm">Contact</p>
-    //     </div>
+        {/* 4th Column */}
+        <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
+          <h3
+            className="mb-3"
+            style={{
+              fontSize: "18px",
+            }}
+          >
+            Quick Link
+          </h3>
+          <p className="mb-3 text-sm">Privacy Policy</p>
+          <p className="mb-3 text-sm">Terms Of Use</p>
+          <p className="mb-3 text-sm">FAQ</p>
+          <p className="mb-3 text-sm">Contact</p>
+        </div>
 
-    //     {/* 5th Column */}
-    //     <div className="flex-1 min-w-[150px]">
-    //       <h3
-    //         className="mb-3"
-    //         style={{
-    //           fontSize: "18px",
-    //         }}
-    //       >
-    //         Download App
-    //       </h3>
-    //       <p className="mb-3 text-xs">Save 3$ with App New User Only</p>
-    //       <div className="flex items-center mb-5 space-x-2 mt-2">
-    //         <img src="./images/QR.jpg" alt="QR Code" className="w-16 h-16" />
-    //         <div>
-    //           <div
-    //             className="flex mb-3 items-center space-x-0 border p-1 rounded-md bg-black border-white text-white"
-    //             style={{ height: "36px", width: "40" }}
-    //           >
-    //             <img
-    //               src="./images/playstore.png"
-    //               alt="Google Play Store"
-    //               className="w-5 h-5"
-    //             />
-    //             <div className="text-sm">
-    //               <p
-    //                 className="text-xs mb-0"
-    //                 style={{
-    //                   fontSize: "6px",
-    //                 }}
-    //               >
-    //                 GET IT ON
-    //               </p>
-    //               <p
-    //                 className="font-bold"
-    //                 style={{
-    //                   fontSize: "10px",
-    //                 }}
-    //               >
-    //                 Google Play
-    //               </p>
-    //             </div>
-    //           </div>
+        {/* 5th Column */}
+        <div className="flex-1 min-w-[150px]">
+          <h3
+            className="mb-3"
+            style={{
+              fontSize: "18px",
+            }}
+          >
+            Download App
+          </h3>
+          <p className="mb-3 text-xs">Save 3$ with App New User Only</p>
+          <div className="flex items-center mb-5 space-x-2 mt-2">
+            <img src="./images/QR.jpg" alt="QR Code" className="w-16 h-16" />
+            <div>
+              <div
+                className="flex mb-3 items-center space-x-0 border p-1 rounded-md bg-black border-white text-white"
+                style={{ height: "36px", width: "40" }}
+              >
+                <img
+                  src="./images/playstore.png"
+                  alt="Google Play Store"
+                  className="w-5 h-5"
+                />
+                <div className="text-sm">
+                  <p
+                    className="text-xs mb-0"
+                    style={{
+                      fontSize: "6px",
+                    }}
+                  >
+                    GET IT ON
+                  </p>
+                  <p
+                    className="font-bold"
+                    style={{
+                      fontSize: "10px",
+                    }}
+                  >
+                    Google Play
+                  </p>
+                </div>
+              </div>
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> main
               <div
                 className="flex items-center space-x-1 border p-1 rounded-md bg-black border-white text-white"
                 style={{ height: "36px", width: "40" }}
@@ -176,7 +188,10 @@ const Footer = () => {
         </p>
       </div>
     </footer>
+<<<<<<< HEAD
+=======
     // <div></div>
+>>>>>>> main
   );
 };
 
