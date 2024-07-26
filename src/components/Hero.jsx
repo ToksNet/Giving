@@ -15,7 +15,7 @@ const Hero = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 2000,
     autoplaySpeed: 4000,
     cssEase: "linear",
@@ -24,8 +24,8 @@ const Hero = () => {
   };
   return (
     <>
-      <div className="mt-28 mx-0 md:mt-32 md:mx-24 md:mr-16">
-        <div className="flex w-full">
+      <div className="mt-32 md:px-24">
+        <div className="flex w-full justify-center ">
           <div className="border-r-[1px] hidden md:flex flex-col border-[#D4B4B4] pr-3 pt-14">
             <a href="#" className="flex gap-11 items-center mb-[10px]">
               <span>Women's Fashion</span>
@@ -58,9 +58,9 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="flex flex-col-reverse md:flex-row w-4/5 md:pt-14 md:pl-12">
-            <div className="bg-black w-screen  h-52 md:w-3/6 md:h-[300px] pl-12 mt-5 md:mt-0 md:pt-12">
-              <div className="flex gap-5 mr-12 justify-center md:justify-normal md:ml-0 items-center mb-5">
+          <div className="flex flex-col-reverse md:flex-row w-full md:w-4/5  md:pl-12 md:mt-[39px] h-[344px] ax-h-full">
+            <div className="bg-black w- flex flex-col justify-center items-center md:items-start w-full max-w-full h-52 md:w-3/6 md:h-[300px] px-4 md:pl-12 md:mt-0 ">
+              <div className="flex gap-5 justify-center md:justify-normal md:ml-0 items-center ">
                 <img
                   src="../images/HeroApple.png"
                   className="w-12 md:w-10"
@@ -68,16 +68,17 @@ const Hero = () => {
                 />
                 <p className="text-white text-xl font-medium md:font-normal md:text-sm">
                   iPhone 15 Series
+
                 </p>
               </div>
 
               <div className="mb-5">
-                <p className="text-white font-bold md:font-semibold text-3xl md:text-5xl md:tracking-wider">
+                <p className="text-white font-bold md:font-semibold text-2xl md:text-3xl xl:text-5xl mt-5 md:tracking-wider text-center md:text-left">
                   Up to 10% off Voucher
                 </p>
               </div>
 
-              <a href="#" className="flex ml-24 md:ml-0 items-center gap-5">
+              <a href="#" className="flex items-center gap-5 pb-2">
                 <p className="text-white border-b-2 pb-1 hover:text-gray-300">
                   Shop Now
                 </p>

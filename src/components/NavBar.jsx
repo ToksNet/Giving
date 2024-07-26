@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import {
   FaShoppingCart,
   FaSearch,
@@ -12,16 +13,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 import { MdClose, MdMail } from "react-icons/md";
 
+
 const NavBar = () => {
-  const [dropdownOpen, setDropdownOpen] = React.useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const [nav, setNav] = React.useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
   };
 
   return (
+
     <div className="fixed md:top-[47px] w-full md:h-[93px] border-b-[1px] border-[#D4B4B4] flex items-center pr-4 md:px-4 bg-white z-50">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
@@ -31,63 +32,58 @@ const NavBar = () => {
             className=" w-[120px] md:w-[175px]"
             alt="Logo"
           />
+
+        </div>
+        <div className="flex items-center max-w-[391px] flex-1">
+          <input className="w-full max-w-full h-8 bg-[#F5F5F5] py-[7px] px-3 text-[#000000] text-[12px] font-normal rounded-lg flex-shrink" placeholder="What are you looking for?" />
+          <button className="bg-[#DB4444] py-[7px] px-3 text-[12px] text-[#FFFFFF] font-normal rounded-br-lg rounded-tr-lg">Search</button>
+        </div>
+        <div className="flex items-center">
+          <div className="flex items-center">
+            <div className="w-6 h-6">
+              <img src={profile} className="w-full" alt="Profile" />
+            </div>
+            <Dropdown buttonLabel="Account Name" menuItems={['Profile', 'My account', 'Logout']} />
+          </div>
+          <div className="flex items-center">
+            <div className="w-6 h-6">
+              <img src={message} className="w-full h-full" alt="Message" />
+            </div>
+            <Dropdown buttonLabel="Help" menuItems={['Profile', 'My account', 'Logout']} />
+          </div>
+          <div className="flex items-center ">
+            <div className="w-6 h-6 relative">
+              <img src={shopping} className="w-full h-full" alt="Shopping" />
+            </div>
+            <p className="absolute bg-[grey] p-[2px] rounded-3xl w-fit max-w-full flex justify-center text-[12px] font-bold top-[25px] ml-[-8px] text-white ">10</p>
+
+            <p className="text-[12px] font-normal text-[#000000]">Cart</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex md:hidden mt-[65px] py-[21px] px-[26px] justify-between items-center border border-b-[#D4B4B4]">
+        <div>
+          <h1 className="font-bold text-sm text-[#000000] w-full">GV3N MARKET PLACE</h1>
         </div>
 
-        {/* Search Form */}
-        <div
-          className="hidden md:flex items-center bg-[#F5F5F5] rounded-md"
-          style={{
-            width: "391px",
-            height: "32px",
-            borderRadius: "4px",
-            padding: "7px 0px 7px 20px",
-            gap: "10px",
-          }}
-        >
-          <FaSearch className="text-gray-500" />
-          <input
-            type="text"
-            placeholder="What are you looking for?"
-            className="bg-transparent outline-none flex-1 border-none"
-            style={{ border: "none", background: "transparent", color: "#000" }}
-          />
-          <button className="bg-[#DB4444] text-white px-4 py-1 rounded-r-md">
-            Search
-          </button>
-        </div>
-
-        {/* Mobile Icons and Dropdown Toggle */}
-        <div className="md:hidden flex items-center space-x-4">
-          <FaSearch className="text-gray-500 w-6 h-6" />
-          <PiUserCircleFill className="w-6 h-6" />
-          <FaShoppingCart className="w-6 h-6" />
-          <button onClick={toggleDropdown} className="focus:outline-none">
-            <FaBars className="w-6 h-6" />
-          </button>
-        </div>
-
-        {/* Profile, Help, Cart Sections */}
-        <div className="hidden md:flex items-center space-x-4 pr-9">
-          {/* Profile */}
-          <div className="flex items-center space-x-2">
-            <PiUserCircleFill className="w-8 h-8" />
-            <span className="opacity-50">Account name</span>
+        <div className="flex items-center gap-2">
+          <div className="w-5">
+            <SearchIcon />
           </div>
-          <FaAngleDown className="w-4 h-4" />
-
-          {/* Help */}
-          <div className="flex items-center space-x-2">
-            <FontAwesomeIcon icon={faQuestionCircle} className="w-8 h-8" />
-            <span className="opacity-50">Help</span>
-            <FaAngleDown className="w-4 h-4" />
+          <div className="w-5">
+            <img src={profile} className="w-full h-full" alt="Message" />
+          </div>
+          <div className="w-5">
+            <img src={shopping} className="w-full h-full" alt="Message" />
+          </div>
+          <div className="w-5">
+            <img src={message} className="w-full h-full" alt="Message" />
+          </div>
+          <div onClick={toggleNav}>
+            <MenuIcon />
           </div>
 
-          {/* Cart */}
-          <div className="flex items-center space-x-2">
-            <FaShoppingCart className="w-8 h-8" />
-            <span className="opacity-50">Cart</span>
-            <FaAngleDown className="w-4 h-4" />
-          </div>
 
           {nav ? (
             <div
@@ -237,10 +233,27 @@ const NavBar = () => {
                 <a href="#" className="text-black text-[14px] font-semibold">customer.support@gv3n.cc</a>
               </div>
             </div>
+
           </div>
         </div>
-      )}
-    </div>
+        <div className="flex flex-col justify-center items-center mt-[360px]">
+          <div>
+            <button className="px-8 py-3 bg-[#EA4335] text-[#FFFFFF] font-bold text-[9.87px]">Submit a ticket</button>
+
+          </div>
+          <div className="flex items-center gap-4 mt-6">
+            <LocalPostOfficeIcon className="text-black" />
+            <p className="font-medium text-sm text-[#1C1B1F] "> customer.support@gv3n.cc</p>
+          </div>
+          <div>
+            <p className="font-normal text-[11.05px] text-[#000000] mt-10 pb-[33px]">© Copyright gv3n  2024. All right reserved. </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </>
+
+
   );
 };
 

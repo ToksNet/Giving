@@ -12,29 +12,34 @@ const ProductCard = ({
   reviews,
 }) => {
   return (
-    <div className="mb-14 w-full max-w-xs mx-auto">
-      <div className="group relative md:w-52">
-        <div className=" flex items-start md:w-52 py-2 pb-6 md:pr-1 md:pl-7 gap-7 bg-gray-200">
-          <div className="px-2 w-full h-48 flex items-center justify-center bg-gray-200">
-            <img
-              src={imageSrc}
-              className="object-contain w-full h-full"
-              alt={title}
-            />
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <a href="#">
-              <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
-            </a>
-            <a href="#">
-              <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
-            </a>
-          </div>
-        </div>
-        <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <Link to="/product-details"> Add to Cart </Link>
-        </div>
+    <div className="">
+    <div className="relative group">
+  <div className="bg-[#F5F5F5] flex justify-center items-center h-[250px] px-4">
+    <div className="">
+      <div className="">
+        <img
+          src={imageSrc}
+          className=""
+          alt={title}
+        />
       </div>
+      <div className="absolute top-0 right-0 pr-3 pt-3 flex flex-col gap-2">
+        <a href="#">
+          <IoMdHeartEmpty className="p-1 w-7 h-7 bg-white rounded-full" />
+        </a>
+        <a href="#">
+          <IoEyeOutline className="p-1 w-7 h-7 bg-white rounded-full" />
+        </a>
+      </div>
+      <Link to="/product-details">
+      <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       Add to Cart
+      </div>
+      </Link>
+    </div>
+  </div>
+</div>
+
       <div className="mt-4">
         <p className="text-sm font-medium">{title}</p>
         <div className="flex gap-2 mt-1">
@@ -116,7 +121,7 @@ const ExploreProduct1 = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-7">
           {products.map((product, index) => (
             <ProductCard key={index} {...product} />
           ))}

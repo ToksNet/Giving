@@ -1,3 +1,4 @@
+
 // import React, { useState } from "react";
 // import { Prod1 } from "../../constants/constants";
 // import Star from "../Star";
@@ -37,6 +38,7 @@
 //     setCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
 //   };
 
+
 //   return (
 //     <div className="md:max-h-screen  md:flex gap-6 justify-center ">
 //       <div className="flex flex-col-reverse md:flex-row gap-2 ">
@@ -68,7 +70,9 @@
 //         <h2 className="font-semibold ">${discountPrice}</h2>
 //         <div className="text-bold font-medium text-sm">{shortDescription}</div>
 
+
 //         <hr className="border-gray-400" />
+
 
 //         <div className="flex items-center gap-2 ">
 //           <p className="inline font-semibold">Colors:</p>
@@ -218,6 +222,7 @@
 //                   </clipPath>
 //                 </defs>
 //               </svg>
+
 
 //               <div className="space-y-1 text-sm font-medium">
 //                 <p>Free Delivery</p>
