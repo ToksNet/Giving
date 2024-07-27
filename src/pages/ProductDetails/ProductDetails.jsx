@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+
 // import FullProductCard from '../../components/ProductDescripComponents/FullProductCard';
 // import ProductDescription from './ProductDescription';
 // import RelatedItems from './RelatedItems';
 // import React, { useState } from "react";
+
 import { Prod1 } from "../../constants/constants";
 import Star from '../../components/Star';
 import { FaHeart } from "react-icons/fa";
@@ -189,7 +191,7 @@ const ProductDetails = () => {
         <span className='text-[14px] text-[#808080] font-[400]'>Account </span> / <span className='text-[14px] text-[#808080] font-[400]'>Gamming </span> / <span className='text-[#000000] font-[400] text'> Havic HV G-92 Gamepad</span>
       </div>
 
-      {/* <Full Product Card Section/> */}
+      {/* <Full Product Cart Section/> */}
       <div className=" md:mt-[80px] mt-[31px]   md:flex gap-[71px] ">
         <div className="flex h-screen flex-col-reverse md:w-full md:flex-row gap-[30px] ">
           <div className="md:block md:w-[45%] px-4 md:px-0 flex gap-[12px] md:space-y-4">

@@ -188,10 +188,6 @@ const Footer = () => {
         </p>
       </div>
     </footer>
-<<<<<<< HEAD
-=======
-    // <div></div>
->>>>>>> main
   );
 };
 
