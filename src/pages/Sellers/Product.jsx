@@ -184,7 +184,7 @@ function Product() {
   return (
     <>
       <SellersPageNav />
-      <div className="p-4 md:mt-20  mt-32 md:mx-10">
+      {/* <div className="p-4 md:mt-20  mt-32 md:mx-10">
         <div className="flex flex-col ">
           <div className="flex flex-col md:flex-row md:items-center justify-between md:justify-between">
             <h1 className="md:text-2xl md:py-1 py-5 text-lg  font-bold mb-5  md:mb-0">
@@ -280,9 +280,9 @@ function Product() {
                     <div className="bg-[#595bd4] w-5 h-5 pt-[5px] pl-[5px] rounded">
                       {product.edit}
                     </div>
-                    {/* <div className="bg-[#595bd4] w-7 h-7 p-2 rounded"> */}
+                    {/* <div className="bg-[#595bd4] w-7 h-7 p-2 rounded"> 
                       {product.delete}
-                    {/* </div> */}
+                    {/* </div> 
                   </div>
                 </div>
                 ))}
@@ -303,7 +303,7 @@ function Product() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

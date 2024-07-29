@@ -1,12 +1,24 @@
 import React from 'react';
-import Button from '@mui/material/Button';
 
-const AuthButton = ({ children, ...props }) => {
+const AuthButton = ({ children, disabled, ...props }) => {
+  const buttonStyles = {
+    backgroundColor: disabled ? '#E07575' : '#DB4444', 
+    color: '#FFFFFF', 
+    padding: '16px 40px',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: disabled ? 'not-allowed' : 'pointer',
+    opacity: disabled ? 0.7 : 1,
+  };
   return (
-    <Button variant="contained" className='px-[30px] py-4 rounded bg-[white]  border border-[#FB1314] text-base font-medium text-[#000000]'  {...props}>
+    <button
+      className='signup-button'
+      style={buttonStyles}
+      disabled={disabled}
+      {...props}
+    >
       {children}
-    </Button>
+    </button>
   );
 };
-
 export default AuthButton;

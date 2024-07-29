@@ -6,14 +6,8 @@ import { AiFillApple } from "react-icons/ai";
 
 const Footer = () => {
   return (
-<<<<<<< HEAD
     <footer className="bg-black mt-24 text-white py-10">
       <div className="container mx-auto flex flex-col md:flex-row md:flex-wrap items-start md:justify-between px-3 md:px-10">
-=======
-
-    <footer className="bg-black mt-24 text-white py-10">
-      <div className="container mx-auto flex flex-col md:flex-row md:flex-wrap items-start ml-4 md:justify-between px-3 md:px-10">
->>>>>>> main
         {/* 1st Column */}
         <div className="flex-1 min-w-[150px] mb-5 md:mb-0">
           <h3
@@ -25,11 +19,7 @@ const Footer = () => {
             Gv3n market place
           </h3>
           <p className="mb-3">Subscribe</p>
-<<<<<<< HEAD
           <p style={{ fontSize: "12px" }}>Get 10% off your first order</p>
-=======
-          <p style={{ fontSize: "13px" }}>Get 10% off your first order</p>
->>>>>>> main
           <form className="mt-3 flex items-center">
             <div className="relative">
               <input
@@ -142,10 +132,6 @@ const Footer = () => {
                 </div>
               </div>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
               <div
                 className="flex items-center space-x-1 border p-1 rounded-md bg-black border-white text-white"
                 style={{ height: "36px", width: "40" }}
@@ -188,10 +174,6 @@ const Footer = () => {
         </p>
       </div>
     </footer>
-<<<<<<< HEAD
-=======
-    // <div></div>
->>>>>>> main
   );
 };
 

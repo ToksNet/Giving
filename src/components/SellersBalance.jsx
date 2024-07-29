@@ -5,7 +5,7 @@ function SellersBalance({ available = 0, pending = 0, review = 0 }) {
 
   return (
     <div className="p-4 mt-4 m-4 md:h-80 rounded-lg shadow-lg bg-white lg:w-1/3 lg:ml-auto">
-      <div className="flex justify-between items-center mb-4">
+      {/* <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold">Balance</h2>
         <span className="text-xl font-medium" style={{ color: "#595BD4" }}>
           Payments
@@ -33,7 +33,7 @@ function SellersBalance({ available = 0, pending = 0, review = 0 }) {
         <button className="text-[#595BD4] text-xl  py-2 px-4 rounded-lg">
           Withdraw
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
