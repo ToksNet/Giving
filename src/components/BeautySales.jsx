@@ -3,7 +3,7 @@ import React from "react";
 function BeautySales() {
   return (
     <div className="flex justify-center items-center ">
-      <div className="w-full h-[250px] md:h-full md:w-full flex justify-center">
+      <div className="w-full h-full md:h-full md:w-full flex justify-center">
         <img
           src="./images/beauty.png"
           alt="Beauty Sales"

@@ -3,10 +3,9 @@ import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
 import SellersLayout from "./layouts/SellersLayout";
 import Index from "./pages/Home/Index";
-import Signin from "./pages/auth/Signin";
-import Signup from "./pages/auth/Signup";
-import SellersReg from "./pages/auth/SellersReg";
-import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Signin from "./pages/auth/buyersAuth/Signin";
+import Signup from "./pages/auth/buyersAuth/Signup";
+import ProductDetails from "./pages/Home/ProductDetails";
 import Cart from "./pages/Home/Cart";
 
 import {
@@ -24,22 +23,30 @@ import Pending from "./components/Sellers/pending";
 import Cancelled from "./components/Sellers/cancelled";
 import ProductProvider from "./components/Sellers/ProductContext";
 import Transactions from "./pages/Sellers/Transactions";
+import EmailVerification from "./pages/auth/buyersAuth/EmailVerification";
+import ForgotPassword from "./pages/auth/buyersAuth/ForgotPassword";
+import OTPVerification from "./pages/auth/buyersAuth/OTPVerification";
+import ChangePassword from "./pages/auth/buyersAuth/ChangePasword";
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      {" "}
-        <Route path="/" element={<MainLayout />} >
+      <Route path="/" element={<MainLayout />} >
         <Route index element={<Index />} />
         <Route path="product-details/:id" element={<ProductDetails />} />
         <Route path="cart" element={<Cart />} />
-        </Route>
-        <Route path="auth" element={<AuthLayout />}>
+      </Route>
+      <Route path="auth" element={<AuthLayout />}>
         <Route path="Signin" element={<Signin />} />
         <Route path="Signup" element={<Signup />} />
-        <Route path="Sellers" element={<SellersReg />} />
-        </Route>
-        <Route path="sellers" element={<SellersLayout />}>
+        <Route path="email-verification" element={<EmailVerification />} />
+        <Route path="forgot-password" element={<ForgotPassword />} />
+        <Route path="otp-verification" element={<OTPVerification />} />
+        <Route path="change-password" element={<ChangePassword />} />
+      </Route>
+      <Route path="sellers" element={<SellersLayout />}>
         <Route path="dashboard" element={<SellersDashboard />} />
         <Route path="track" element={<TrackOrder />} />
         <Route path="product" element={<Product />} />
