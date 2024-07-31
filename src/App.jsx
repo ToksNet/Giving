@@ -24,30 +24,34 @@ import Pending from "./components/Sellers/pending";
 import Cancelled from "./components/Sellers/cancelled";
 import ProductProvider from "./components/Sellers/ProductContext";
 import Transactions from "./pages/Sellers/Transactions";
+import Checkout from "./pages/Home/Checkout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       {" "}
         <Route path="/" element={<MainLayout />} >
-        <Route index element={<Index />} />
-        <Route path="product-details" element={<ProductDetails />} />
-        <Route path="cart" element={<Cart />} />
+          <Route index element={<Index />} />
+          <Route path="product-details" element={<ProductDetails />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="checkout" element={<Checkout />} />
         </Route>
+
         <Route path="auth" element={<AuthLayout />}>
-        <Route path="Signin" element={<Signin />} />
-        <Route path="Signup" element={<Signup />} />
-        <Route path="Sellers" element={<SellersReg />} />
+          <Route path="Signin" element={<Signin />} />
+          <Route path="Signup" element={<Signup />} />
+          <Route path="Sellers" element={<SellersReg />} />
         </Route>
+
         <Route path="sellers" element={<SellersLayout />}>
-        <Route path="dashboard" element={<SellersDashboard />} />
-        <Route path="track" element={<TrackOrder />} />
-        <Route path="product" element={<Product />} />
-        <Route path="transaction" element={<Transactions />} />
-        <Route path="orders" element={<Orders />} />
-        <Route path="delivered" element={<Delivered />} />
-        <Route path="pending" element={<Pending />} />
-        <Route path="cancelled" element={<Cancelled />} />
+          <Route path="dashboard" element={<SellersDashboard />} />
+          <Route path="track" element={<TrackOrder />} />
+          <Route path="product" element={<Product />} />
+          <Route path="transaction" element={<Transactions />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="delivered" element={<Delivered />} />
+          <Route path="pending" element={<Pending />} />
+          <Route path="cancelled" element={<Cancelled />} />
       </Route>
     </>
   )
