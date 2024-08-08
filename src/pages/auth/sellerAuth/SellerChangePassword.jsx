@@ -14,7 +14,7 @@ const validationSchema = Yup.object({
     .required('Confirm Password is required'),
 });
 
-const ChangePassword = () => {
+const SellerChangePassword = () => {
   const initialValues = {
     password: '',
     confirmPassword: '',
@@ -60,4 +60,4 @@ const ChangePassword = () => {
   );
 };
 
-export default ChangePassword;
+export default SellerChangePassword;

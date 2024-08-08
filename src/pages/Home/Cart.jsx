@@ -1,6 +1,6 @@
 import React from "react";
 import DeleteIcon from '@mui/icons-material/Delete';
-import { addToCart, decrementQuantity, incrementQuantity, removeFromCart } from "../../features/cart/cartSlice";
+import {decrementQuantity, incrementQuantity, removeFromCart } from "../../features/cart/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const Cart = () => {

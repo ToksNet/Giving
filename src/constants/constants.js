@@ -192,3 +192,50 @@ export const exploreProducts = [
     price: "660", starsNo: 6, reviewsNo: 55,
   },
 ];
+export const trackOrders = [
+ 
+  {
+    id:1, image: "../images/NewArrival-1.png", prodName: "RPG Liquid CPU Cooler",
+    price: "160", starsNo:6, reviewsNo: 65, status: 'orders',
+  },
+  {
+    id:2, image: "../images/TheNorthCoat.png", prodName: "The North Coat",
+    price: "260", originalPrice: "360", starsNo: 5, reviewsNo: 65, status: 'delivered',
+  },
+  {
+    id:3, image: "../images/Explore-1.jpg", prodName: "Breed Dry Dog Food",
+    price: "500", starsNo: 4, reviewsNo: 35, status: 'undelivered',
+  },
+  {
+    id:4, image: "../images/Explore-8.png", prodName: "Quilted satin Jacket",
+    price: "660", starsNo: 3, reviewsNo: 55, status: 'cancelled orders',
+  },
+  {
+    id:5, image: "../images/Explore-7.png", prodName: "GP11 Shooter USP Gamepad",
+    price: "660", starsNo: 6, reviewsNo: 55, status: 'orders',
+  },
+  {
+    id:6, image: "../images/Explore-5.png", prodName: "Kid's Electric Car",
+    price: "980", starsNo: 3, reviewsNo:9, status: 'delivered',
+  },
+  {
+    id:7, image: "../images/Explore-4.png", prodName: "Curology Product Set",
+    price: "500", starsNo: 4, reviewsNo: 145, status: 'undelivered',
+  },
+  {
+    id:8, image: "../images/Explore-3.png", prodName: "ASUS FHD Gaming Laptop",
+    price: "700", starsNo: 10, reviewsNo: 325,status: 'cancelled orders',
+  },
+  {
+    id:9, image: "../images/Explore-6.png", prodName: "Jr.Zoom Soccer Cleats",
+    price: "1160", starsNo: 11, reviewsNo: 35,status: 'delivered',
+  },
+  {
+    id: 10, image: "../images/GucciDuffleBag.png", prodName: "Gucci Duffle Bag",
+    price: "960", starsNo: 4, reviewsNo: 19,status: 'orders',
+  },
+  {
+    id: 11, image: "../images/SmallBookShelf.png", prodName: "Small BookSelf",
+    price: "230", starsNo: 1, reviewsNo: 65, status: 'delivered',
+  },
+];
