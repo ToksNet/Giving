@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import Star from '../../components/Star';
 import { FaHeart } from "react-icons/fa";
 import { prod4 } from "../../assets/images";
-import Tabs from "../../components/ProductDescripComponents/TabComponent";
 import ProductCard from "../../components/ProductCard";
 import CountDown from "../../components/CountDown";
 import prod from '../../assets/images/prodDetails/prod5.png'
@@ -266,7 +265,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      {/* <div className="mt-12">
+      <div className="mt-12">
         <li className="text-[16px] text-[#807D7E] font-[400] font-[DM sans] leading-[33.5px]">
           The DualShock 4 Wireless Controller features familiar controls, and
           incorporates several innovative features to usher in a new era of
@@ -315,7 +314,6 @@ const ProductDetails = () => {
           <li>Wireless Connectivity</li>
           <li>1 x Stereo headset jack</li>
           <li>Bluetooth 2.1+EDR</li>
-          {/* </ul> *
         </ul>
 
         <ul className="list-disc mt-[28px] pl-[16px] flex flex-col gap-[] text-[16px] text-[#807D7E] font-[400] font-[DM sans] leading-[33.5px]">
@@ -337,8 +335,8 @@ const ProductDetails = () => {
           <li>Package Included:</li>
           <li>1 x Game Handle ps4 controller</li>
         </ul>
-      </div> */}
-      {/* <div className="md:flex gap-[64px]">
+      </div> 
+     <div className="md:flex gap-[64px]">
         <div className="p-2 bg-gray-200 w-[50%] flex justify-center items-center rounded-md">
           <img src={product.image} alt="" className="w-[252.84px]" />
         </div>
@@ -380,7 +378,7 @@ const ProductDetails = () => {
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }

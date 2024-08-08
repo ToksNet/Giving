@@ -7,8 +7,8 @@ const AuthLayout = () => {
   return (
     <>
       <SaleBanner />
-      {/* <Authnav /> */}
-      <div className="lg:flex md:flex md:flex-col-reverse items-center lg:flex-row mt-[190px]">
+      <Authnav />
+      <div className="lg:flex md:flex md:flex-col-reverse items-center lg:flex-row md:mt-[190px]">
       <div className="w-full md:h-[100vh] lg:w-1/2">
       <img
             src="/images/SideImage.png"
