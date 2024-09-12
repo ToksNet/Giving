@@ -1,47 +1,38 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { AiOutlineMore } from "react-icons/ai"; // Assuming you're using react-icons for the 3 dot icon
+import { NavLink } from 'react-router-dom';
+
+const navLinks = [
+  { to: "/sellers/dashboard", label: "Dashboard" },
+  { to: "/sellers/track", label: "Track Order" },
+  { to: "/sellers/product", label: "Products" },
+  { to: "/sellers/transaction", label: "Transactions" },
+  { to: "/sellers/analytics", label: "Store Analytics" },
+  { to: "/sellers/profile", label: "Profile" },
+
+  
+];
 
 const SellersPageNav = () => {
-  const navItems = [
-    { name: "Dashboard", path: "/sellers/dashboard" },
-    { name: "Track Orders", path: "/sellers/track" },
-    { name: "Products", path: "/sellers/product" },
-    { name: "Transaction", path: "/sellers/transaction" },
-    { name: "Store Analytics", path: "/store-analytics" },
-    { name: "Profile", path: "/profile" },
-  ];
-
   return (
-    <div className="w-full items-center">
-      <div className="hidden mx-40 lg:flex mt-48  justify-between bg-[#FBECEC] w-[894px] h-[56px] rounded-md shadow-md p-2">
-        {navItems.map((item) => (
-          <NavLink
-            key={item.name}
-            to={item.path}
-            className={({ isActive }) =>
-              isActive
-                ? "bg-[#DB4444] text-white px-4 py-2 rounded-md"
-                : "text-black px-4 py-2"
-            }
-          >
-            {item.name}
-          </NavLink>
-        ))}
-        <div className="relative w-12 h-12">
-          <img
-            src="../images/Rectangle 16.png"
-            alt="Background"
-            className="w-full h-full"
-          />
-          <img
-            src="../images/more.png"
-            alt="Dots Background"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5"
-          />
-          <AiOutlineMore className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black" />
-        </div>
-      </div>
+    <div className='w-full hidden md:flex justify-center items-center'>
+      <div className='mt-[190px] bg-[#FBECEC] p-[9px] w-fit rounded-[3px]'>
+      <nav>
+        <ul className='flex items-center'>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <NavLink 
+                to={link.to}
+                className={({ isActive }) => isActive ? "active" : ""}
+              >
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
+          <li className='w-[35px] h-[35px] bg-[#F4C5C5] flex items-center justify-center rounded-[3px]'>
+            <img src='../images/more.png'  alt="open"/>
+          </li>
+        </ul>
+      </nav>
+    </div>
     </div>
   );
 };

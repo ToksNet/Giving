@@ -1,6 +1,5 @@
 import React from "react";
 import SellersBalance from "../../components/SellersBalance";
-import SellersDashboardList from "../../components/SellersDashboardList";
 import SellersPageNav from "../../components/SellersPageNav";
 
 const items = [
@@ -51,12 +50,33 @@ const items = [
 const SellersDashboard = () => {
   return (
     <>
-      <SellersPageNav />
-      <div className="p-4 md:mt-20 mt-40 md:mx-10">
-        <h1 className="text-2xl ml-5 font-bold mb-4">Dashboard</h1>
-        <div className="flex flex-col lg:flex-row gap-4">
+      <div className="p-4 md:mt-10 mt-40 md:px-[88px] ">
+        <h1 className="text-2xl  font-bold mb-4">Dashboard</h1>
+        <div className="flex flex-col lg:flex-row gap-[56px]">
+          <div className="lg:w-2/3 ">
+            <div className="grid grid-cols-1  md:grid-cols-3 gap-y-[54px] gap-x-[38px]">
+              {items.map((item, index) => (
+                <div
+                  key={index}
+                  className="border border-[#CCCCCC] md:h-[100px] rounded-lg p-2 flex items-center shadow-md"
+                >
+                  <div className="bg-[#FAE3E3] flex items-center justify-center rounded-full flex-shrink-0 w-10 h-10 mr-3">
+
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className=" w-5 h-5 "
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-medium mb-1">{item.title}</h3>
+                    <p className="text-[10px] text-gray-600">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
           <SellersBalance />
-          <SellersDashboardList items={items} />
         </div>
       </div>
     </>

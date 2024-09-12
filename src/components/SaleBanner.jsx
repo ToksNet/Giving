@@ -18,7 +18,7 @@ const SaleBanner = () => {
         </span>
       </div>
       <div className="relative mr-4 md:mr-20">
-        <button
+        {/* <button
           onClick={toggleDropdown}
           className="flex items-center focus:outline-none"
         >
@@ -30,12 +30,12 @@ const SaleBanner = () => {
               clipRule="evenodd"
             />
           </svg>
-        </button>
-        {dropdownOpen && (
+        </button> */}
+        {/* {dropdownOpen && (
           <div className="absolute right-0 mt-2 w-32 bg-white text-black rounded-md shadow-lg">
             <ul>
               <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
-                English
+                Englishs
               </li>
               <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
                 Spanish
@@ -48,7 +48,7 @@ const SaleBanner = () => {
               </li>
             </ul>
           </div>
-        )}
+        )} */}
       </div>
     </div>
 
