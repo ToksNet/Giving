@@ -191,7 +191,7 @@ function Product() {
                           <img src={infocircle} alt="error image" />
                         </div>
                         <br />
-                        OOps!! Error
+                        OOps! Error
                       </td>
                     </tr>
                   ) : (
